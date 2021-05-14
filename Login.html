@@ -1,47 +1,39 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/login.css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-xl-9 mx-auto">
-                <div class="card card-signin flex-row my-5">
-                    <div class="card-img-left d-none d-md-flex">
-                        <!-- Background image for card set in CSS! -->
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Registro</h5>
-                        <form class="form-signin">
-                            <div class="form-label-group">
-                                <input type="text" id="inputUserame" class="form-control" placeholder="Nombre" required autofocus>
-                                <label for="inputUserame">Nombre</label>
-                            </div>
+    <div class="login-reg-panel">
+        <div class="login-info-box">
+            <h2>Have an account?</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <label id="label-register" for="log-reg-show">Login</label>
+            <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+        </div>
 
-                            <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-                                <label for="inputEmail">Email</label>
-                            </div>
+        <div class="register-info-box">
+            <h2>Don't have an account?</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+            <label id="label-login" for="log-login-show">Register</label>
+            <input type="radio" name="active-log-panel" id="log-login-show">
+        </div>
 
-                            <hr>
-
-                            <div class="form-label-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-                                <label for="inputPassword">Contraseña</label>
-                            </div>
-
-                            <div class="form-label-group">
-                                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Contraseña" required>
-                                <label for="inputConfirmPassword">Repita Contraseña</label>
-                            </div>
-
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrar</button>
-                            <a class="d-block text-center mt-2 small" href="#">Iniciar Sesion</a>
-                            <hr class="my-4">
-                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Ingresar por Google</button>
-                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Ingresar por Facebook</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="white-panel">
+            <div class="login-show">
+                <h2>LOGIN</h2>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="button" value="Login">
+                <a href="">Forgot password?</a>
+            </div>
+            <div class="register-show">
+                <h2>REGISTER</h2>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="button" value="Register">
             </div>
         </div>
     </div>
-    <!-- Footer-->
-
 </body>
