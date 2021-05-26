@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+
+<?php
+
+include('funciones/setup.php');
+?>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +15,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registro Tren</title>
+    <title>Registro Trabajador</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -32,14 +37,23 @@
             <div class="card card-1">
               <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Descripcion Tren</h2>
-                    <form method="POST">
+                    <h2 class="title">Informacion Trabajador</h2>
+                    <form method="POST" action="ctrl_trabajadores.php">
                       <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Numero de Patente" name="Patente">
+                            <input class="input--style-1" type="text" placeholder="Nombre Completo" name="nombre" id="nombre">
                       </div>
 						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Numero de Vagones" name="N°Vagones">
+                            <input class="input--style-1" type="text" placeholder="Rut" name="rut" id="rut">
                       </div>
+					  <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="Contraseña" name="clave" id="clave">
+                      </div>
+                      <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="Telefono" name="telefono" id="telefono">
+                  </div>
+                  <div class="input-group">
+                    <input class="input--style-1" type="text" placeholder="Rol" name="rol" id="rol">
+              </div>
                       <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Registrar</button>
                         </div>
