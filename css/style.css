@@ -1,0 +1,35 @@
+:root {
+    --primary: #0010a3;
+    --light: #ffffff;
+    --grey: #efefef
+}
+
+body{
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bg-primary {background-color: var(--primary)!important;}
+.bg-light {background-color: var(--light)!important;}
+
+#sidebar-container {
+    min-height: 100vh;
+}
+
+#sidebar-container {
+    padding: .875rem 1.25rem;
+}
+
+#sidebar-container .menu {
+    width: 18rem;
+}
+
+.btn-search {
+    right: 5px;
+}
