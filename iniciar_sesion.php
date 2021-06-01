@@ -26,27 +26,57 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
+
+
+<script>
+	function validar()
+	{
+		if(document.form1.frmusuario.value=="")
+		{
+			alert("Debe Ingresar datos al campo Usuario");
+			document.form1.frmusuario.focus();
+			return false;
+		}
+		if(document.form1.frmclave.value=="")
+		{
+			alert("Debe Ingresar la clave");
+			document.form1.frmclave.focus();
+			return false;
+		}
+		document.form1.submit();
+	}
+</script>
 </head>
 <body>
-	<form>
+	<form  action="ctrl_login.php" method="post" name="form1">
 		<h1>Iniciar Sesión</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="email">EMAIL ADDRESS</label>
-		  <input type="text" name="email" id="email" class="text">
+		  <label for="email">RUT</label>
+		  <input type="text"  id="frmrut" name="frmrut" class="text">
 		</p>
 		<p>
-		  <label for="password">PASSWORD</label>
-		  <input type="password" name="password" id="password" class="text">
+		  <label for="password">CLAVE</label>
+		  <input type="password" name="frmclave" id="frmclave" class="text">
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Log in">
 		<br> <br>
-		<span>No tienes Cuenta? Registrate</span>
+		
 		</center>
+
+
+        <?php
+	    if(isset($_GET['error']))
+	    {
+	    	?>
+	    <h2>Error de Usuario/Clave, vuelva a intentarlo</h2>
+	    <?php
+		}
+		?>
 		</div>
 
 	  </form>
