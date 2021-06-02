@@ -38,20 +38,20 @@ https://templatemo.com/tm-536-dream-pulse
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="iniciar_sesion.php" class="nav-link">
+                  <a href="iniciar_sesion_administrador.php" class="nav-link">
                     <span class="d-inline-block mr-3">Administrador</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="iniciar_sesion.php" class="nav-link">
+                  <a href="iniciar_sesion_despachador.php" class="nav-link">
                     <span class="d-inline-block mr-3">Despachador</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="iniciar_sesion.php" class="nav-link">
-                    <span class="d-inline-block mr-3">Trabajador</span>
+                  <a href="iniciar_sesion_visualizador.php" class="nav-link">
+                    <span class="d-inline-block mr-3">Visualizador</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Formulario Usuario</title>
+	<title>Iniciar Sesion</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -28,43 +28,56 @@
 <!--===============================================================================================-->
 
 
-
+<script>
+	function validar()
+	{
+		if(document.form1.frmusuario.value=="")
+		{
+			alert("Debe Ingresar datos al campo Usuario");
+			document.form1.frmusuario.focus();
+			return false;
+		}
+		if(document.form1.frmclave.value=="")
+		{
+			alert("Debe Ingresar la clave");
+			document.form1.frmclave.focus();
+			return false;
+		}
+		document.form1.submit();
+	}
+</script>
 </head>
 <body>
-<form method="POST" action="ctrl_usuarios.php" >
-		<h1>Crear Usuario</h1>
+	<form  action="ctrl_login_visualizador.php" method="post" name="form1">
+		<h1>Iniciar Sesión</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="email">Nombre Completo</label>
-          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
+		  <label for="email">RUT</label>
+		  <input type="text"  id="frmrut" name="frmrut" class="text">
 		</p>
 		<p>
-		  <label for="password">Rut</label>
-		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
-		</p>
-        <p>
-		  <label for="password">Tipo de Usuario</label>
-          <div class="select">
-          <select  name="tipo_usuario" id="tipo_usuario">
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
-                                    <option>Administrador</option>
-                                    <option>Despachador</option>
-									<option>Visualizador</option>
-                                </select>
-                                </div>
-		</p>
-        <p>
-		  <label for="password">Contraseña</label>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
+		  <label for="password">CLAVE</label>
+		  <input type="password" name="frmclave" id="frmclave" class="text">
 		</p>
 		<center>
-		<input type="submit" name="go" id="go" value="Registrar">
+		<input type="submit" name="go" id="go" value="Log in">
 		<br> <br>
 		
 		</center>
+
+
+        <?php
+	    if(isset($_GET['error']))
+	    {
+	    	?>
+	    <h2>Error de Usuario/Clave, vuelva a intentarlo</h2>
+	    <?php
+		}
+		?>
+		</div>
 
 	  </form>
 </body>
