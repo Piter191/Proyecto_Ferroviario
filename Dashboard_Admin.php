@@ -23,20 +23,23 @@
   <div class="d-flex">
     <div id="sidebar-container" class="bg-primary">
       <div class="logo">
+      <center>
         <h4 class="text-light font-weight-bold" >Panel Administrador</h4>
         <img src="img/Logo_GEOTREN.png" width="150px" height="100px">
+        <center>
       </div>
 
       
       <br>
       <div class="menu">
-      <button id="nada" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Inicio</button> </br> <br>
+      <center>
+      <button id="nada" type="button" class="btn btn-warning"><i class="icon ion-md-star mr-2 lead"></i>Inicio</button> </br> <br>
         <button id="userId" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Usuarios</button> </br> <br>
-        <button id="trabajadorId" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Trabajadores</button> <br> <br>
-        <button id="trenId" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Trenes</button> <br> <br>
-        <button id="pendiente" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Trabajo</button> <br> <br>
-        <button id="mapaId" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Mapa</button>
-        
+        <button id="trabajadorId" type="button" class="btn btn-warning"><i class="icon ion-md-build mr-2 lead"></i>Trabajadores</button> <br> <br>
+        <button id="trenId" type="button" class="btn btn-warning"><i class="icon ion-md-train mr-2 lead"></i> Trenes</button> <br> <br>
+        <button id="pendiente" type="button" class="btn btn-warning"><i class="icon ion-md-paper mr-2 lead"></i>Ordenes de Trabajo</button> <br> <br>
+        <button id="mapaId" type="button" class="btn btn-warning"><i class="icon ion-md-locate mr-2 lead"></i>Mapa</button>
+        </center>
       </div>
     </div>
     <div class="w-100">
