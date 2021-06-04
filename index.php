@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Dream Pulse TemplateMo</title>
+    <title>Inicio Geotren</title>
 <!--
 DREAM PULSE
 https://templatemo.com/tm-536-dream-pulse
@@ -101,14 +101,9 @@ https://templatemo.com/tm-536-dream-pulse
               <div class="tm-section-wrap">
                 <section id="intro" class="tm-section">
                     <div class="tm-bg-white-transparent tm-intro">
-                        <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">Introducing Dream Pulse</h2>
+                        <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">Bienvenido a Geotren</h2>
                         <p class="tm-color-gray">
-                          This box alpha 30 percent. Left sidebar is a sticky element.
-                          Right side Contents are scrolling up and down. This background has a
-                          parallax effect.
-                        </p>
-                        <p class="mb-0 tm-color-gray">
-                          Dream Pulse is a Bootstrap 4.3.1 template designed for your websites. You can modify this layout as you like.
+                          En el menu de la izquiera los logins de usuario segun su tipo, una vez logeado tendra acceso al sistema
                         </p>
                     </div>              
                 </section>
