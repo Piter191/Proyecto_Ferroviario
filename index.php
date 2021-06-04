@@ -103,29 +103,22 @@ https://templatemo.com/tm-536-dream-pulse
                     <div class="tm-bg-white-transparent tm-intro">
                         <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">Bienvenido a Geotren</h2>
                         <p class="tm-color-gray">
-                          En el menu de la izquiera los logins de usuario segun su tipo, una vez logeado tendra acceso al sistema
+                          En el menu de la izquierda los logins de usuario segun su tipo, una vez logeado tendra acceso al sistema
                         </p>
                     </div>              
                 </section>
             </div>            
           </div>
-
-       
-            
           <div class="tm-section-wrap bg-white">
             <section id="talk" class="row tm-section">
                 <div class="col-xl-6 mb-5">
                   <div class="tm-double-border-1 tm-border-gray">
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                        <h2 class="tm-color-primary tm-section-title mb-4">Talk to Us</h2>
+                        <h2 class="tm-color-primary tm-section-title mb-4">Contacte con nosotros</h2>
                         <p class="mb-4">
-                          Sed aliquet, nibh ac hendrerit faucibus, tellus metus viverra
-                          tellus, vel volutpat purus orci ac ex.
-                        </p>
-                        <p class="mb-3">
-                          120-240 Orci varius natoque penatibus, <br>
-                          parturient montes, 10660 <br>
-                          nasvetur ridiculus mus
+                        Correo: Geotren@gmail.com
+                        Telefono de Contacto: +5699999999
+
                         </p>
                     </div>                    
                   </div>                  
