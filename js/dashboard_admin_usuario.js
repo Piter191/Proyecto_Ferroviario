@@ -1,5 +1,5 @@
 $('#userId').on('click', () => {
-    $.get('./get_all_users.php',  // url
+    $.get('../get_all_users.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `

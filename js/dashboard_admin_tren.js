@@ -1,5 +1,5 @@
 $('#trenId').on('click', () => {
-    $.get('./get_all_trains.php',  // url
+    $.get('../get_all_trains.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `

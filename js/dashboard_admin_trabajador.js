@@ -1,5 +1,5 @@
 $('#trabajadorId').on('click', () => {
-    $.get('./get_all_workers.php',  // url
+    $.get('../get_all_workers.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const trabajadores = data;
         let table = `
