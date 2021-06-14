@@ -168,3 +168,8 @@ select {
   cursor: inherit;
   line-height: inherit;
 }
+
+input-time {
+  width: 100%;
+
+}
