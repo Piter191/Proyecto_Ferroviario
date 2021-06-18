@@ -13,7 +13,7 @@ if($num!=0)
 {
 	session_start();
 	$_SESSION['user']=$datos['rut'];
-	header('Location:Dashboard_Admin.php');
+	header('Location:Dashboard_Visualizador.php');
 }else{
 	header('Location:iniciar_sesion_administrador.php?error');
 }
