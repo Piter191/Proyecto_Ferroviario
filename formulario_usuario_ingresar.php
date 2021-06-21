@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Formulario Tren</title>
+	<title>Formulario Usuario</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,19 +31,34 @@
 
 </head>
 <body>
-<form method="POST" action="ctrl_trenes.php" >
-		<h1>Crear Tren</h1>
+<form method="POST" action="ctrl_usuarios_ingresar.php" >
+		<h1>Crear Usuario</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="numero_patente">Numero de patente</label>
-          <input  type="text" placeholder="Ingresa el numero de patente" name="num_patente" id="num_patente" required>
+		  <label for="email">Nombre Completo</label>
+          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
 		</p>
 		<p>
-		  <label for="numero_vagones">Numero de vagones</label>
-		  <input  type="text" placeholder="Ingresa el numero de vagones" name="num_vagones" id="num_vagones" required>
+		  <label for="password">Rut</label>
+		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
+		</p>
+        <p>
+		  <label for="password">Tipo de Usuario</label>
+          <div class="select">
+          <select  name="tipo_usuario" id="tipo_usuario">
+                                    <option disabled="disabled" selected="selected">Seleccionar</option>
+                                    <option>Administrador</option>
+                                    <option>Despachador</option>
+									<option>Visualizador</option>
+                                </select>
+                                </div>
+		</p>
+        <p>
+		  <label for="password">Contraseña</label>
+          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">

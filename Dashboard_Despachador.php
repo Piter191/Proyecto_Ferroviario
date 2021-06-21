@@ -34,8 +34,10 @@
       <div class="menu">
       <center>
       <button id="nada" type="button" class="btn btn-warning"><i class="icon ion-md-star mr-2 lead"></i>Inicio</button> </br> <br>
+
         <button id="trabajoId" type="button" class="btn btn-warning"><i class="icon ion-md-paper mr-2 lead"></i>Ordenes de Trabajo</button> <br> <br>
-        <button id="mapaId" type="button" class="btn btn-warning"><i class="icon ion-md-locate mr-2 lead"></i>Mapa</button>
+        <button id="mapaId" type="button" class="btn btn-warning"><i class="icon ion-md-locate mr-2 lead"></i>Mapa</button> <br> <br>
+        <a href="index.php"><button   type="button" class="btn btn-warning" >  <i class="icon ion-md-exit mr-2 lead"> </i> Cerrar Sesión  </button> </a>
         </center>
       </div>
     </div>
@@ -45,15 +47,15 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <form class="d-flex position-relative">
-            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-search position-absolute" type="submit "><i class="icon ion-md-search"></i></button>
-          </form>
+    
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
            
           </div>
         </div>
       </nav>
+      <div class="container-fluid">
+        <div id='inicio'>
+        </div>
       <div class="container-fluid">
         <div id='table'>
         </div>
@@ -70,7 +72,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='./js/dashboard_admin_usuario.js'></script>
   <script src='./js/dashboard_admin_trabajador.js'></script>
-  <script src='./js/dashboard_admin_tren.js'></script>
+  <script src='./js/dashboard_admin_trabajo.js'></script>
+  <script src='./js/inicio_despachador.js'></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

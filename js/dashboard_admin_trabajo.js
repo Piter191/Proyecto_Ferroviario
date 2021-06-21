@@ -3,18 +3,20 @@ $('#trabajoId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
+        <h2>Mantenedor de Ordenes de Trabajo </h2> <br>
             <table style="width:100%">
                 <tr>
                     <th>Hora de inicio</th>
                     <th>Hora de termino</th>
+                    <th>Trabajador</th>
                 </tr>
         `;
         users.forEach(user => {
             table = `${table}
             <tr>
-                <td> ${user.nombre} </td>
-                <td> ${user.rut} </td>
-                <td> ${user.tipo_usuario} </td>
+                <td> ${user.hora_inicio} </td>
+                <td> ${user.hora_termino} </td>
+                <td> ${user.nombre_trabajador} </td>
             </tr>
             `;
         })
@@ -25,6 +27,7 @@ $('#trabajoId').on('click', () => {
             </a>
            
         `
+        $('#inicio').empty();
         $('#table').html(table);
     });
 });

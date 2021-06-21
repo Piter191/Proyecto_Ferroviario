@@ -11,7 +11,6 @@ while($datos=mysqli_fetch_array($data)) {
         'id_trabajador' => $datos['id_trabajador'],
         'telefono' => $datos['telefono'],
         'clave' => $datos['clave'],
-        'rol' => $datos['rol'],
     ));
 }
 header('Content-type: application/json');

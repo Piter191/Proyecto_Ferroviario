@@ -3,12 +3,14 @@ $('#trabajadorId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const trabajadores = data;
         let table = `
+        <h2>Mantenedor de Trabajadores </h2> <br>
             <table style="width:100%">
+            
                 <tr>
                     <th>Nombre</th>
                     <th>Rut</th>
                     <th>Teléfono</th>
-                    <th>Rol</th>
+                    <th>Opciones</th>
                 </tr>
         `;
         trabajadores.forEach(user => {
@@ -17,18 +19,21 @@ $('#trabajadorId').on('click', () => {
                 <td> ${user.nombre} </td>
                 <td> ${user.rut} </td>
                 <td> ${user.telefono} </td>
-                <td> ${user.rol} </td>
+                <td> <a class="btn btn-primary"  href="./formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <i class="icon ion-md-hammer"></i>
+                </a> </td>
             </tr>
             `;
         })
         table = `${table}</table>`;
         table = `${table}
       
-            <a class="btn btn-primary" href="./formulario_trabajador.php" role="button">
+            <a class="btn btn-primary" href="./formulario_trabajador_ingresar.php" role="button">
                 Ingresar
             </a>
            
         `
+        $('#inicio').empty();
         $('#table').html(table);
     });
 });

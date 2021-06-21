@@ -14,19 +14,3 @@ $(() => {
     })
 })
 
-
-$(() => {
-    $.get("./get_all_trains.php", (data) =>{
-       const workers = data;
-       let select = `
-       <select id="trenes" name="trenes">
-       `;
-       workers.forEach(element => {
-        select=`${select}
-        <option value=${element.id_tren}>${element.num_patente} </option>
-        `;
-       });
-       select=`${select}</select>`;
-       $('#trenes').html(select);
-    })
-})

@@ -31,7 +31,7 @@
 
 </head>
 <body>
-<form method="POST" action="ctrl_trabajadores.php" >
+<form method="POST" action="ctrl_trabajadores_ingresar.php" >
 		<h1>Crear Trabajador</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
@@ -53,16 +53,7 @@
 		  <label for="telefono">Telefono</label>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" required>
 		</p>
-		<p>
-		  <label for="password">Rol</label>
-          <div class="select">
-          <select  name="tipo_usuario" id="tipo_usuario">
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
-                                    <option>Mantención</option>
-                                    <option>Transporte</option>
-                                </select>
-                                </div>
-		</p>
+		
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
 		<br> <br>

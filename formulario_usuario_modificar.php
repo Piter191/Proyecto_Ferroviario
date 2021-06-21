@@ -26,24 +26,35 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
+<?php
+include("funciones/setup.php");
+	$id_usuario=$_GET['id_usuario'];
+	$sql="SELECT * FROM usuario where id_usuario='".$id_usuario."'";
+	
+	$result=mysqli_query(conectar(),$sql);// EJECUTAMOS LA QUERY
+
+	while($user=mysqli_fetch_array($result))
+	{
+?>
 
 
 
 </head>
 <body>
-<form method="POST" action="ctrl_usuarios.php" >
+<form method="POST" action="ctrl_usuarios_modificar.php" >
 		<h1>Crear Usuario</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
+		<input type="text" style="display: none;" name="id_usuario" value="<?php echo $_GET['id_usuario'] ?>">
 		<p>
 		  <label for="email">Nombre Completo</label>
-          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
+          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" value="<?php echo $user['nombre'] ?>" required>
 		</p>
 		<p>
 		  <label for="password">Rut</label>
-		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
+		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" value="<?php echo $user['rut'] ?>" required>
 		</p>
         <p>
 		  <label for="password">Tipo de Usuario</label>
@@ -58,7 +69,7 @@
 		</p>
         <p>
 		  <label for="password">Contraseña</label>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
+          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
@@ -67,5 +78,6 @@
 		</center>
 
 	  </form>
+	  <?php } ?>
 </body>
 </html>
