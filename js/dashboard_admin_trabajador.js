@@ -19,9 +19,17 @@ $('#trabajadorId').on('click', () => {
                 <td> ${user.nombre} </td>
                 <td> ${user.rut} </td>
                 <td> ${user.telefono} </td>
-                <td> <a class="btn btn-primary"  href="./formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <td> 
+                <a class="btn btn-primary"  href="./formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-hammer"></i>
-                </a> </td>
+                </a>
+                
+                
+                <a class="btn btn-primary"  href="./eliminar_trabajador.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <i class="icon ion-md-remove-circle"></i>
+                </a>
+                
+                </td>
             </tr>
             `;
         })
