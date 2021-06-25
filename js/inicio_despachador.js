@@ -7,6 +7,7 @@ const text=`
     <center>
 `;
 $('#table').empty();
+$('#mapa').empty();
 $('#inicio').html(text);
 
 })

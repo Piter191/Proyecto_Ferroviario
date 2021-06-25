@@ -9,6 +9,7 @@ $('#trabajoId').on('click', () => {
                     <th>Hora de inicio</th>
                     <th>Hora de termino</th>
                     <th>Trabajador</th>
+                    <th>Opciones</th>
                 </tr>
         `;
         users.forEach(user => {
@@ -17,6 +18,12 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.hora_inicio} </td>
                 <td> ${user.hora_termino} </td>
                 <td> ${user.nombre_trabajador} </td>
+                <td>
+
+                <a class="btn btn-primary"  href="./eliminar_trabajo.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+                <i class="icon ion-md-remove-circle"></i>
+                 </a> 
+                </td>
             </tr>
             `;
         })
@@ -28,6 +35,7 @@ $('#trabajoId').on('click', () => {
            
         `
         $('#inicio').empty();
+        $('#mapa').empty();
         $('#table').html(table);
     });
 });

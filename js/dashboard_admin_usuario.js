@@ -39,6 +39,7 @@ $('#userId').on('click', () => {
            
         `
         $('#inicio').empty();
+        $('#mapa').empty();
         $('#table').html(table);
     });
 });
