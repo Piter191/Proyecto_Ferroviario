@@ -89,6 +89,7 @@
   <script src='./js/dashboard_admin_tren.js'></script>
   <script src='./js/inicio_admin.js'></script>
   <script src='./js/mapa.js'></script>
+  <script src='./js/tableToExcel.js'></script>
   
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--

@@ -4,6 +4,8 @@ $('#userId').on('click', () => {
         const users = data;
         let table = `
         <h2>Mantenedor de Usuarios </h2> <br>
+        <input type="button" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')" value="Export to Excel">
+        <br> <br>
             <table id="tabla_usuarios" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
                 <thead>
                 <tr>
