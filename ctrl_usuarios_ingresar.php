@@ -9,8 +9,7 @@ $sql = "INSERT INTO usuario (nombre,rut,tipo_usuario,clave) VALUES ('".$_POST['n
 	
 
 	mysqli_query(conectar(),$sql);
-	//header('Location:formulario.php');
-    echo $sql;
+	header('Location:Dashboard_Admin.php');
 
 
 ?>

@@ -82,7 +82,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src='./js/dashboard_admin_usuario.js'></script>
   <script src='./js/dashboard_admin_trabajador.js'></script>
-  <script src='./js/dashboard_admin_trabajo.js'></script>
+  <script src='./js/dashboard_despachador_trabajo.js'></script>
   <script src='./js/inicio_despachador.js'></script>
   <script src='./js/mapa.js'></script>
   <script src='./js/tableToExcel.js'></script>

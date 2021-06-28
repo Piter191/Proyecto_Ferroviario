@@ -32,7 +32,7 @@
 </head>
 <body>
 <form method="POST" action="ctrl_trabajo_traslado.php" >
-		<h1>Crear Orden de Trabajo de Traslado</h1>
+		<h1>Crear Orden de Trabajo</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>

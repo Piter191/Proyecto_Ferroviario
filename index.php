@@ -38,6 +38,13 @@ https://templatemo.com/tm-536-dream-pulse
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a href="#talk" class="nav-link">
+                    <span class="d-inline-block mr-3">Contactos </span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
                   <a href="iniciar_sesion_administrador.php" class="nav-link">
                     <span class="d-inline-block mr-3">Administrador</span>
                     <span class="d-inline-block tm-white-rect"></span>
@@ -52,12 +59,6 @@ https://templatemo.com/tm-536-dream-pulse
                 <li class="nav-item">
                   <a href="iniciar_sesion_visualizador.php" class="nav-link">
                     <span class="d-inline-block mr-3">Visualizador</span>
-                    <span class="d-inline-block tm-white-rect"></span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#talk" class="nav-link">
-                    <span class="d-inline-block mr-3">Contactos </span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
@@ -101,7 +102,9 @@ https://templatemo.com/tm-536-dream-pulse
                     <div class="tm-bg-white-transparent tm-intro">
                         <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">Bienvenido a Geotren</h2>
                         <p class="tm-color-gray">
-                          En el menu de la izquierda los logins de usuario segun su tipo, una vez logeado tendra acceso al sistema
+                         Estimado usuario en nuestra pagina usted podra encontrar la informacion necesaria para estar en conocimiento
+                         de toda la operacion y actividad que se desarrolla en nuestra propuesta de mantencion ferroviaria. 
+                         Esperando atender a sus requerimientos le damos la bienvenida.
                         </p>
                     </div>              
                 </section>
@@ -114,34 +117,17 @@ https://templatemo.com/tm-536-dream-pulse
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
                         <h2 class="tm-color-primary tm-section-title mb-4">Contacte con nosotros</h2>
                         <p class="mb-4">
-                        Correo: Geotren@gmail.com
-                        Telefono de Contacto: +5699999999
+                        Correo: Geotren@gmail.com <br>
+                        Telefonos de Contacto: <br>
+                        +56997393869 <br>
+                        +56995560468 <br>
+                        +56965187681 
 
                         </p>
                     </div>                    
                   </div>                  
                 </div>
-                <div class="col-xl-6 mb-5">
-                  <div class="tm-contact-form-wrap">
-                    <form action="" method="POST" class="tm-contact-form">
-                        <div class="form-group">
-                          <input type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Tu Nombre" required="" />
-                        </div>
-                        <div class="form-group">
-                          <input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Tu Email" required="" />
-                        </div>
-                
-                        <div class="form-group">
-                          <textarea rows="4" id="contact_message" name="contact_message" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Mensaje" required=""></textarea>
-                        </div>
-                
-                        <div class="form-group mb-0">
-                          <button type="submit" class="btn rounded-0 d-block ml-auto tm-btn-primary">
-                            Enviar
-                          </button>
-                        </div>
-                      </form>
-                  </div>                    
+                                    
                 </div>
               </section>
           </div>
