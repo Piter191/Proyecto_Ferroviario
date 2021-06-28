@@ -4,13 +4,17 @@ $('#userId').on('click', () => {
         const users = data;
         let table = `
         <h2>Mantenedor de Usuarios </h2> <br>
-            <table style="width:100%">
+            <table id="tabla_usuarios" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
+                <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Rut</th>
-                    <th>Tipo usuario</th>
-                    <th>Opciones</th>
+                    <th class="th-sm">Nombre</th>
+                    <th class="th-sm">Rut</th>
+                    <th class="th-sm">Tipo usuario</th>
+                    <th class="th-sm">Opciones</th>
+                    
                 </tr>
+                </thead>
+                <tbody>
         `;
         users.forEach(user => {
             table = `${table}
@@ -31,7 +35,9 @@ $('#userId').on('click', () => {
             </tr>
             `;
         })
-        table = `${table}</table>`;
+        table = `${table}   
+        </tbody> 
+        </table>`;
         table = `${table}
             <a class="btn btn-primary" href="./formulario_usuario_ingresar.php" role="button">
                 Ingresar
@@ -41,5 +47,15 @@ $('#userId').on('click', () => {
         $('#inicio').empty();
         $('#mapa').empty();
         $('#table').html(table);
+        $('#tabla_usuarios').DataTable();
+        $('.dataTables_length').addClass('bs-select');
     });
 });
+
+/*
+function create_table(){
+    $('#Tabla_Usuarios').DataTable();
+    //$('.dataTables_length').addClass('bs-select');
+
+}
+*/

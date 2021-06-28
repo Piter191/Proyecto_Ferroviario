@@ -4,13 +4,16 @@ $('#trabajoId').on('click', () => {
         const users = data;
         let table = `
         <h2>Mantenedor de Ordenes de Trabajo </h2> <br>
-            <table style="width:100%">
+        <table id="tabla_trabajo" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
+        <thead>
                 <tr>
                     <th>Hora de inicio</th>
                     <th>Hora de termino</th>
                     <th>Trabajador</th>
                     <th>Opciones</th>
                 </tr>
+                </thead>
+                <tbody>
         `;
         users.forEach(user => {
             table = `${table}
@@ -27,7 +30,9 @@ $('#trabajoId').on('click', () => {
             </tr>
             `;
         })
-        table = `${table}</table>`;
+        table = `${table}
+        </tbody> 
+        </table>`;
         table = `${table}
             <a class="btn btn-primary" href="./formulario_trabajo.php" role="button">
                 Ingresar
@@ -37,5 +42,7 @@ $('#trabajoId').on('click', () => {
         $('#inicio').empty();
         $('#mapa').empty();
         $('#table').html(table);
+        $('#tabla_trabajo').DataTable();
+        $('.dataTables_length').addClass('bs-select');
     });
 });
