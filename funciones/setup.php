@@ -38,7 +38,7 @@ function fecha_espanol($fecha)
 
 function conectar()
 {
-    $con=mysqli_connect("localhost","root","root","prueba");
+    $con=mysqli_connect("localhost","root","Geotren","Geotren");
     return $con;
 }
 
