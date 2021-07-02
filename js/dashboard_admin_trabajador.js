@@ -25,12 +25,12 @@ $('#trabajadorId').on('click', () => {
                 <td> ${user.rut} </td>
                 <td> ${user.telefono} </td>
                 <td> 
-                <a class="btn btn-primary"  href="./formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <a class="btn btn-primary"  href="./crud_trabajador/formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-hammer"></i>
                 </a>
                 
                 
-                <a class="btn btn-primary"  href="./eliminar_trabajador.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <a class="btn btn-primary"  href="./crud_trabajador/eliminar_trabajador.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                 </a>
                 
@@ -44,7 +44,7 @@ $('#trabajadorId').on('click', () => {
         </table>`;
         table = `${table}
       
-            <a class="btn btn-primary" href="./formulario_trabajador_ingresar.php" role="button">
+            <a class="btn btn-primary" href="./crud_trabajador/formulario_trabajador_ingresar.php" role="button">
                 Ingresar
             </a>
            

@@ -1,5 +1,5 @@
 <?php
-include('funciones/setup.php');
+include('../funciones/setup.php');
 	
 
 
@@ -9,8 +9,8 @@ $sql = "INSERT INTO trabajo_transporte (hora_inicio,hora_termino,id_trabajador) 
 	
 
 	mysqli_query(conectar(),$sql);
-	header('Location:formulario_trabajo.php');
-	echo '<script language="javascript">alert("ingreso exitoso");</script>';
+	//header('Location:formulario_trabajo.php');
+	echo $sql;
 
 
 ?>

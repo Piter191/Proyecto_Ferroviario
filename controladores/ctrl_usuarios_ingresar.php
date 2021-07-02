@@ -1,5 +1,5 @@
 <?php
-include('funciones/setup.php');
+include('../funciones/setup.php');
 	
 
 
@@ -9,7 +9,7 @@ $sql = "INSERT INTO usuario (nombre,rut,tipo_usuario,clave) VALUES ('".$_POST['n
 	
 
 	mysqli_query(conectar(),$sql);
-	header('Location:Dashboard_Admin.php');
+	header('Location:../Dashboard_Admin.php');
 
 
 ?>

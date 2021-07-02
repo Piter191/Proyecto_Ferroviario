@@ -23,11 +23,11 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
 <?php
-include("funciones/setup.php");
+include("../funciones/setup.php");
 	$id_trabajador=$_GET['id_trabajador'];
 	$sql="SELECT * FROM trabajador where id_trabajador='".$id_trabajador."'";
 	
@@ -40,10 +40,10 @@ include("funciones/setup.php");
 
 </head>
 <body>
-<form method="POST" action="controladores/ctrl_trabajadores_modificar.php" >
+<form method="POST" action="../controladores/ctrl_trabajadores_modificar.php" >
 		<h1>Crear Trabajador</h1>
 		<center>
-		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
+		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<input type="text" style="display: none;" name="id_trabajador" value="<?php echo $_GET['id_trabajador'] ?>">

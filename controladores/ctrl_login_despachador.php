@@ -1,6 +1,6 @@
 <?php
 
-include("funciones/setup.php");
+include("../funciones/setup.php");
 
 //echo $_POST['frmusuario']."-".$_POST['frmclave']
 
@@ -13,8 +13,8 @@ if($num!=0)
 {
 	session_start();
 	$_SESSION['user']=$datos['rut'];
-	header('Location:Dashboard_Despachador.php');
+	header('Location:../Dashboard_Despachador.php');
 }else{
-	header('Location:iniciar_sesion_administrador.php?error');
+	header('Location:../iniciar_sesion_despachador.php?error');
 }
 ?>

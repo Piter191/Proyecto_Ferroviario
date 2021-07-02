@@ -23,18 +23,18 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
 
 
 
 </head>
 <body>
-<form method="POST" action="controladores/ctrl_trabajo_traslado.php" >
+<form method="POST" action="../controladores/ctrl_trabajo_traslado.php" >
 		<h1>Crear Orden de Trabajo</h1>
 		<center>
-		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
+		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
@@ -63,7 +63,7 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src='./js/formulario_trabajo.js'></script>
+<script src='formulario_trabajo.js'></script>
 </body>
 
 </html>

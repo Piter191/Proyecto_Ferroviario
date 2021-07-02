@@ -23,11 +23,11 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/util.css">
+	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
 <?php
-include("funciones/setup.php");
+include("../funciones/setup.php");
 	$id_usuario=$_GET['id_usuario'];
 	$sql="SELECT * FROM usuario where id_usuario='".$id_usuario."'";
 	
@@ -41,10 +41,10 @@ include("funciones/setup.php");
 
 </head>
 <body>
-<form method="POST" action="controladores/ctrl_usuarios_modificar.php" >
+<form method="POST" action="../controladores/ctrl_usuarios_modificar.php" >
 		<h1>Crear Usuario</h1>
 		<center>
-		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
+		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<input type="text" style="display: none;" name="id_usuario" value="<?php echo $_GET['id_usuario'] ?>">

@@ -1,5 +1,5 @@
 $('#userId').on('click', () => {
-    $.get('../get_all_users.php',  // url
+    $.get('./get_all_users.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
@@ -25,11 +25,11 @@ $('#userId').on('click', () => {
                 <td> ${user.rut} </td>
                 <td> ${user.tipo_usuario} </td>
                 <td> 
-                  <a class="btn btn-primary"  href="crud_usuario/formulario_usuario_modificar.php?id_usuario=${user.id_usuario}"  role="button">
+                  <a class="btn btn-primary"  href="./crud_usuario/formulario_usuario_modificar.php?id_usuario=${user.id_usuario}"  role="button">
                     <i class="icon ion-md-hammer"></i>
                   </a> 
 
-                  <a class="btn btn-primary"  href="crud_usuario/eliminar_usuario.php?id_usuario=${user.id_usuario}"  role="button">
+                  <a class="btn btn-primary"  href="./crud_usuario/eliminar_usuario.php?id_usuario=${user.id_usuario}"  role="button">
                      <i class="icon ion-md-remove-circle"></i>
                   </a> 
 
@@ -41,7 +41,7 @@ $('#userId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-            <a class="btn btn-primary" href="crud_usuario/formulario_usuario_ingresar.php" role="button">
+            <a class="btn btn-primary" href="./crud_usuario/formulario_usuario_ingresar.php" role="button">
                 Ingresar
             </a>
            

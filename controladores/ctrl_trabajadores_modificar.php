@@ -3,7 +3,7 @@
 
 
 <?php
-include('funciones/setup.php');
+include('../funciones/setup.php');
 	
 
 
@@ -19,7 +19,7 @@ $id_trabajador=$_POST["id_trabajador"];
 
 $sql = "UPDATE trabajador SET nombre = '$nombre', rut = '$rut', clave = '$clave', telefono = '$telefono' where id_trabajador=".$id_trabajador;
 	mysqli_query(conectar(),$sql);
-	header('Location:Dashboard_Admin.php');
+	header('Location:../Dashboard_Admin.php');
 
 
 ?>
