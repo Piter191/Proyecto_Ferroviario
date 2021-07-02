@@ -48,7 +48,7 @@
 </script>
 </head>
 <body>
-	<form  action="ctrl_login_despachador.php" method="post" name="form1">
+	<form  action="controladores/ctrl_login_despachador.php" method="post" name="form1">
 		<h1>Iniciar Sesión</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">

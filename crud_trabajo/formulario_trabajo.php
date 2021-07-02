@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Formulario Trabajador</title>
+	<title>Formulario Usuario</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,29 +31,27 @@
 
 </head>
 <body>
-<form method="POST" action="ctrl_trabajadores_ingresar.php" >
-		<h1>Crear Trabajador</h1>
+<form method="POST" action="controladores/ctrl_trabajo_traslado.php" >
+		<h1>Crear Orden de Trabajo</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="nombre">Nombre Completo</label>
-          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
+		  <label for="hora_inicio">Hora de Inicio</label>
+          <input class="input-time"  type="time" name="hora_inicio" id="hora_inicio" required>
 		</p>
 		<p>
-		  <label for="rut">Rut</label>
-		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
+		  <label for="hora_termino">Hora de Termino</label>
+		  <input  type="time" name="hora_termino" id="hora_termino" required>
 		</p>
         <p>
-		  <label for="contraseña">Contraseña</label>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
+		  <label for="password">Trabajador</label> 
+		  <div class="select" id="trabajadores" name="trabajadores"> 
+         </div>
 		</p>
-    <p>
-		  <label for="telefono">Telefono</label>
-          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" required>
-		</p>
-		
+		<br>
+       
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
 		<br> <br>
@@ -61,5 +59,11 @@
 		</center>
 
 	  </form>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='./js/formulario_trabajo.js'></script>
 </body>
+
 </html>

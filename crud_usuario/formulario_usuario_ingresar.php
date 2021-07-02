@@ -31,7 +31,7 @@
 
 </head>
 <body>
-<form method="POST" action="ctrl_usuarios_ingresar.php" >
+<form method="POST" action="controladores/ctrl_usuarios_ingresar.php" >
 		<h1>Crear Usuario</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">

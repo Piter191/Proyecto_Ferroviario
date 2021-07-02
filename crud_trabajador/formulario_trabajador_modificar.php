@@ -40,7 +40,7 @@ include("funciones/setup.php");
 
 </head>
 <body>
-<form method="POST" action="ctrl_trabajadores_modificar.php" >
+<form method="POST" action="controladores/ctrl_trabajadores_modificar.php" >
 		<h1>Crear Trabajador</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
