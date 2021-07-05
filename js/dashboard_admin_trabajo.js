@@ -12,6 +12,7 @@ $('#trabajoId').on('click', () => {
                     <th>Hora de inicio</th>
                     <th>Hora de termino</th>
                     <th>Trabajador</th>
+                    <th>Lugar</th>
                     <th>Opciones</th>
                 </tr>
                 </thead>
@@ -23,6 +24,7 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.hora_inicio} </td>
                 <td> ${user.hora_termino} </td>
                 <td> ${user.nombre_trabajador} </td>
+                <td> ${user.nombre_lugar} </td>
                 <td>
 
                 <a class="btn btn-primary"  href="./crud_trabajo/eliminar_trabajo_administrador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
@@ -36,7 +38,7 @@ $('#trabajoId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-            <a class="btn btn-primary" href="./crud_trabajo/formulario_trabajo.php" role="button">
+            <a class="btn btn-primary" href="./crud_trabajo/formulario_trabajo_ingresar_admin.php" role="button">
                 Ingresar
             </a>
            

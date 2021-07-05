@@ -9,10 +9,11 @@ $('#trabajoId').on('click', () => {
         <table id="tabla_trabajo" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
         <thead>
                 <tr>
-                    <th>Hora de inicio</th>
-                    <th>Hora de termino</th>
-                    <th>Trabajador</th>
-                    <th>Opciones</th>
+                <th>Hora de inicio</th>
+                <th>Hora de termino</th>
+                <th>Trabajador</th>
+                <th>Lugar</th>
+                <th>Opciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -20,10 +21,11 @@ $('#trabajoId').on('click', () => {
         users.forEach(user => {
             table = `${table}
             <tr>
-                <td> ${user.hora_inicio} </td>
-                <td> ${user.hora_termino} </td>
-                <td> ${user.nombre_trabajador} </td>
-                <td>
+            <td> ${user.hora_inicio} </td>
+            <td> ${user.hora_termino} </td>
+            <td> ${user.nombre_trabajador} </td>
+            <td> ${user.nombre_lugar} </td>
+            <td>
 
                 <a class="btn btn-primary"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
@@ -36,7 +38,7 @@ $('#trabajoId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-            <a class="btn btn-primary" href="./crud_trabajo/formulario_trabajo.php" role="button">
+            <a class="btn btn-primary" href="./crud_trabajo/formulario_trabajo_ingresar_despachador.php" role="button">
                 Ingresar
             </a>
            
