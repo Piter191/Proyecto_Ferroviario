@@ -38,7 +38,7 @@
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="email">Nombre Completo</label>
+		 <center> <label for="email">Nombre Completo</label> </center>
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
 		</p>
 		<p>
