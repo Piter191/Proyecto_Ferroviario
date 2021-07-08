@@ -14,7 +14,6 @@ $('#trabajoId').on('click', () => {
                     <th>Hora de inicio</th>
                     <th>Hora de termino</th>
                     <th>Trabajador</th>
-                    <th>Sector</th>
                     <th>Lugar</th>
                     <th>Opciones</th>
                 </tr>
@@ -27,7 +26,6 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.hora_inicio} </td>
                 <td> ${user.hora_termino} </td>
                 <td> ${user.nombre_trabajador} </td>
-                <td> ${user.nombre_sector}
                 <td> ${user.nombre_lugar} </td>
 
                 <td>

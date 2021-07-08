@@ -15,6 +15,7 @@ $('#userId').on('click', () => {
                     <th class="th-sm">Nombre</th>
                     <th class="th-sm">Rut</th>
                     <th class="th-sm">Tipo usuario</th>
+                    <th class="th-sm">Estado</th>
                     <th class="th-sm">Opciones</th>
                     
                 </tr>
@@ -27,6 +28,7 @@ $('#userId').on('click', () => {
                 <td> ${user.nombre} </td>
                 <td> ${user.rut} </td>
                 <td> ${user.tipo_usuario} </td>
+                <td> ${user.estado} </td>
                 <td> 
                   <a class="btn btn-dark"  href="./crud_usuario/formulario_usuario_modificar.php?id_usuario=${user.id_usuario}"  role="button">
                     <i class="icon ion-md-hammer"></i>

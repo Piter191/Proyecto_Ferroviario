@@ -26,7 +26,21 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
-
+<script type="text/javascript">
+		function valideKey(evt){
+			
+			// code is the decimal ASCII representation of the pressed key.
+			var code = (evt.which) ? evt.which : evt.keyCode;
+			
+			if(code==8) { // backspace.
+			  return true;
+			} else if(code>=48 && code<=57) { // is a number.
+			  return true;
+			} else{ // other keys.
+			  return false;
+			}
+		}
+		</script>
 
 
 </head>
@@ -51,7 +65,7 @@
 		</p>
     <p>
 		<center>  <label for="telefono">Telefono</label> </center>
-          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" required>
+          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" onkeypress="return valideKey(event);" required>
 		</p>
 		
 		<center>
