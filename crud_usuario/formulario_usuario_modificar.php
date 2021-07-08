@@ -71,6 +71,16 @@ include("../funciones/setup.php");
 		<center>  <label for="password">Contraseña</label> </center>
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
+		<p>
+		<center>  <label for="password">Estado</label> </center>
+          <div class="select">
+          <select  name="estado" id="estado">
+                                    <option disabled="disabled" selected="selected">Seleccionar</option>
+                                    <option>Activo</option>
+                                    <option>Inactivo</option>
+                                </select>
+                                </div>
+		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
 		<br> <br>

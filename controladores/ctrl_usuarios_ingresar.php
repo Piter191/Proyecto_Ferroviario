@@ -4,7 +4,7 @@ include('../funciones/setup.php');
 
 
 
-$sql = "INSERT INTO usuario (nombre,rut,tipo_usuario,clave) VALUES ('".$_POST['nombre']."','".$_POST['rut']."','".$_POST['tipo_usuario']."','".$_POST['clave']."')";
+$sql = "INSERT INTO usuario (nombre,rut,tipo_usuario,clave,estado) VALUES ('".$_POST['nombre']."','".$_POST['rut']."','".$_POST['tipo_usuario']."','".$_POST['clave']."','".$_POST['estado']."')";
 
 	
 
