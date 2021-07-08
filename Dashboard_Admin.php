@@ -34,12 +34,12 @@
       <br>
       <div class="menu">
       <center>
-      <button id="nada" type="button" class="btn btn-warning"><i class="icon ion-md-star mr-2 lead"></i>Inicio</button> </br> <br>
-        <button id="userId" type="button" class="btn btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Usuarios</button> </br> <br>
-        <button id="trabajadorId" type="button" class="btn btn-warning"><i class="icon ion-md-contacts mr-2 lead"></i>Trabajadores</button> <br> <br>
-        <button id="trabajoId" type="button" class="btn btn-warning"><i class="icon ion-md-clipboard mr-2 lead"></i>Ordenes de Trabajo</button> <br> <br>
-        <button id="mapaId" type="button" class="btn btn-warning"><i class="icon ion-md-locate mr-2 lead"></i>Mapa</button> <br> <br>
-        <a href="index.php"><button   type="button" class="btn btn-warning" >  <i class="icon ion-md-exit mr-2 lead"> </i> Cerrar Sesión  </button> </a>
+      <button id="nada" type="button" class="btn-warning"><i class="icon ion-md-star mr-2 lead"></i>Inicio</button> </br> <br>
+        <button id="userId" type="button" class="btn-warning"><i class="icon ion-md-person mr-2 lead"></i>Usuarios</button> </br> <br>
+        <button id="trabajadorId" type="button" class="btn-warning"><i class="icon ion-md-contacts mr-2 lead"></i>Trabajadores</button> <br> <br>
+        <button id="trabajoId" type="button" class="btn-warning"><i class="icon ion-md-clipboard mr-2 lead"></i>Ordenes de Trabajo</button> <br> <br>
+        <button id="mapaId" type="button" class="btn-warning"><i class="icon ion-md-locate mr-2 lead"></i>Mapa</button> <br> <br>
+        <a href="index.php"><button   type="button" class="btn-warning" >  <i class="icon ion-md-exit mr-2 lead"> </i> Cerrar Sesión  </button> </a>
         </center>
       </div>
     </div>

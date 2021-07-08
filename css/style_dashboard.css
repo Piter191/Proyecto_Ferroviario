@@ -10,6 +10,12 @@ body{
     font-weight: 300;
     color: var(--primary);
 }
+.btn-warning{
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+
+}
 
 a:hover {
     text-decoration: none;
@@ -33,6 +39,7 @@ a:hover {
 .btn-search {
     right: 5px;
 }
+
 
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
