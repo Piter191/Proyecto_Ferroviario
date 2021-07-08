@@ -3,8 +3,11 @@ $('#userId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
-        <h2>Mantenedor de Usuarios </h2> <br>
-        <input type="button" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')" value="Export to Excel">
+
+       <center>
+    <h2>Mantenedor de Usuarios </h2></center> <br>
+  <button class="btn btn-dark" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
+  
         <br> <br>
             <table id="tabla_usuarios" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
                 <thead>
@@ -25,12 +28,14 @@ $('#userId').on('click', () => {
                 <td> ${user.rut} </td>
                 <td> ${user.tipo_usuario} </td>
                 <td> 
-                  <a class="btn btn-primary"  href="./crud_usuario/formulario_usuario_modificar.php?id_usuario=${user.id_usuario}"  role="button">
+                  <a class="btn btn-dark"  href="./crud_usuario/formulario_usuario_modificar.php?id_usuario=${user.id_usuario}"  role="button">
                     <i class="icon ion-md-hammer"></i>
+        
                   </a> 
 
-                  <a class="btn btn-primary"  href="./crud_usuario/eliminar_usuario.php?id_usuario=${user.id_usuario}"  role="button">
+                  <a class="btn btn-danger"  href="./crud_usuario/eliminar_usuario.php?id_usuario=${user.id_usuario}"  role="button">
                      <i class="icon ion-md-remove-circle"></i>
+                
                   </a> 
 
                  </td>
@@ -41,10 +46,11 @@ $('#userId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-            <a class="btn btn-primary" href="./crud_usuario/formulario_usuario_ingresar.php" role="button">
-                Ingresar
+            <a class="btn btn-dark" href="./crud_usuario/formulario_usuario_ingresar.php" role="button">
+            <i class="icon ion-md-add-circle"></i>
+            Ingresar
             </a>
-           
+         
         `
         $('#inicio').empty();
         $('#mapa').empty();

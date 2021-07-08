@@ -3,8 +3,10 @@ $('#trabajadorId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const trabajadores = data;
         let table = `
+        <center>
         <h2>Mantenedor de Trabajadores </h2> <br>
-        <input type="button" onclick="tableToExcel('tabla_trabajador', 'W3C Example Table')" value="Export to Excel">
+        </center>
+        <button class="btn btn-dark" onclick="tableToExcel('tabla_trabajador', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
         <br> <br>
         <table id="tabla_trabajador" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
         <thead>
@@ -25,12 +27,12 @@ $('#trabajadorId').on('click', () => {
                 <td> ${user.rut} </td>
                 <td> ${user.telefono} </td>
                 <td> 
-                <a class="btn btn-primary"  href="./crud_trabajador/formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <a class="btn btn-dark"   href="./crud_trabajador/formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-hammer"></i>
                 </a>
                 
                 
-                <a class="btn btn-primary"  href="./crud_trabajador/eliminar_trabajador.php?id_trabajador=${user.id_trabajador}"  role="button">
+                <a class="btn btn-danger"  href="./crud_trabajador/eliminar_trabajador.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                 </a>
                 
@@ -43,10 +45,10 @@ $('#trabajadorId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-      
-            <a class="btn btn-primary" href="./crud_trabajador/formulario_trabajador_ingresar.php" role="button">
-                Ingresar
-            </a>
+        <a class="btn btn-dark" href="./crud_trabajador/formulario_trabajador_ingresar.php" role="button">
+        <i class="icon ion-md-add-circle"></i>
+        Ingresar
+        </a>
            
         `
         $('#inicio').empty();
