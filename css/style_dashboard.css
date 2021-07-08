@@ -12,9 +12,9 @@ body{
 }
 .btn-warning{
     color: white;
-    width:40%
+    width:60%;
     text-align: center;
-
+    border-radius: 12px;
 }
 
 a:hover {
