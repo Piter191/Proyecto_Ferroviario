@@ -4,7 +4,7 @@ $('#trabajoId').on('click', () => {
         const users = data;
         let table = `
         <center>
-        <h2>Mantenedor de Ordenes de Trabajo </h2> <br>
+        <h2>Mantenedor de Ordenes de Trabajo </h2> 
         </center><br>
         <button class="btn btn-dark" onclick="tableToExcel('tabla_trabajo', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
         <br> <br>

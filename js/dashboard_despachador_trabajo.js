@@ -3,8 +3,10 @@ $('#trabajoId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
-        <h2>Mantenedor de Ordenes de Trabajo </h2> <br>
-        <input type="button" onclick="tableToExcel('tabla_trabajo', 'W3C Example Table')" value="Export to Excel">
+        <center>
+        <h2>Mantenedor de Ordenes de Trabajo </h2> 
+        </center> <br>
+        <button class="btn btn-dark" onclick="tableToExcel('tabla_trabajo', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
         <br> <br>
         <table id="tabla_trabajo" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
         <thead>
@@ -27,7 +29,7 @@ $('#trabajoId').on('click', () => {
             <td> ${user.nombre_lugar} </td>
             <td>
 
-                <a class="btn btn-primary"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+                <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                  </a> 
                 </td>
@@ -38,9 +40,10 @@ $('#trabajoId').on('click', () => {
         </tbody> 
         </table>`;
         table = `${table}
-            <a class="btn btn-primary" href="./crud_trabajo/formulario_trabajo_ingresar_despachador.php" role="button">
-                Ingresar
-            </a>
+        <a class="btn btn-dark" href="./crud_trabajo/formulario_trabajo_ingresar_despachador.php" role="button">
+        <i class="icon ion-md-add-circle"></i>
+        Ingresar
+        </a>
            
         `
         $('#inicio').empty();
