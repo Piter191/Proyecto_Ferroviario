@@ -27,6 +27,8 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.nombre_trabajador} </td>
                 <td> ${user.nombre_sector}
                 <td> ${user.nombre_lugar} </td>
+
+                <td>
                 <a class="btn btn-primary"  href="./crud_trabajo/eliminar_trabajo_administrador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                  </a> 
