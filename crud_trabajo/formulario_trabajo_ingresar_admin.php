@@ -58,13 +58,13 @@
 		</p>
 		<p>
 	<center> <label for="password">Sector</label> </center>
-		  <select id="lista1" name="lista">
-		<option value="0">Seleccione una opcion</option>
-		<option value="1">Linea 3 </option>
-		<option value="2">Interior Mina Granito </option>
-		<option value="3">Portal Tunel </option>
-		<option value="4">Puente de Vaciado</option>
-		<option value="5">Talleres</option>
+		  <select id="lista1" name="lista1">
+		<option disabled value="0">Seleccione una opcion</option>
+		<option value="Linea 3" >Linea 3 </option>
+		<option value="Interior Mina Granito">Interior Mina Granito </option>
+		<option value="Portal Tunel">Portal Tunel </option>
+		<option value="Puente de Vaciado">Puente de Vaciado</option>
+		<option value="Talleres">Talleres</option>
 		  </select>
 		<br>
 		<div id="select2lista"></div>

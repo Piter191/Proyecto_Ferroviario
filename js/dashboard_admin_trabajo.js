@@ -15,6 +15,7 @@ $('#trabajoId').on('click', () => {
                     <th>Hora de termino</th>
                     <th>Trabajador</th>
                     <th>Lugar</th>
+                    <th>Sector</th>
                     <th>Opciones</th>
                 </tr>
                 </thead>
@@ -27,6 +28,7 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.hora_termino} </td>
                 <td> ${user.nombre_trabajador} </td>
                 <td> ${user.nombre_lugar} </td>
+                <td> ${user.nombre_sector} </td>
 
                 <td>
                 <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_administrador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">

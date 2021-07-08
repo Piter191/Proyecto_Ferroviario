@@ -2,7 +2,7 @@
 include('funciones/setup.php');
 
 $sql = "SELECT
- tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador
+ tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador, tabla_lugares.id_sector AS nombre_sector
 FROM trabajo_transporte
 INNER JOIN
   tabla_lugares ON tabla_lugares.id = trabajo_transporte.id
@@ -18,6 +18,7 @@ while($datos=mysqli_fetch_array($data)) {
         'hora_termino' => $datos['hora_termino'],
         'nombre_trabajador' => $datos['nombre_trabajador'],
         'nombre_lugar' => $datos['nombre_lugar'],
+        'nombre_sector' => $datos['nombre_sector'],
     
         
     ));
