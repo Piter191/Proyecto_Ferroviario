@@ -60,7 +60,7 @@
 		</p>
 		<p>
 		  <label for="password">CLAVE</label>
-		  <input type="password" name="frmclave" id="frmclave" class="text">
+		  <input type="password" name="frmclave" id="frmclave" class="text" maxlength="8" minlength="6">
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Log in">
