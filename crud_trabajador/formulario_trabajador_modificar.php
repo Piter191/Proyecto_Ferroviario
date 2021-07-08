@@ -41,26 +41,26 @@ include("../funciones/setup.php");
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_trabajadores_modificar.php" >
-		<h1>Crear Trabajador</h1>
+		<h1>Modificar Trabajador</h1>
 		<center>
 		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<input type="text" style="display: none;" name="id_trabajador" value="<?php echo $_GET['id_trabajador'] ?>">
 		<p>
-		  <label for="nombre">Nombre Completo</label>
+		<center>  <label for="nombre">Nombre</label> </center>
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" value="<?php echo $user['nombre'] ?>" required>
 		</p>
 		<p>
-		  <label for="rut">Rut</label>
+		<center>  <label for="rut">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" value="<?php echo $user['rut'] ?>" required>
 		</p>
         <p>
-		  <label for="contraseña">Contraseña</label>
+	<center><label for="contraseña">Contraseña</label></center>
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
     <p>
-		  <label for="telefono">Telefono</label>
+	<center><label for="telefono">Telefono</label></center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" value="<?php echo $user['telefono'] ?>" required>
 		</p>
 		

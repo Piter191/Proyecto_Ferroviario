@@ -42,18 +42,18 @@ include("../funciones/setup.php");
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_usuarios_modificar.php" >
-		<h1>Crear Usuario</h1>
+		<h1>Modificar Usuario</h1>
 		<center>
 		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<input type="text" style="display: none;" name="id_usuario" value="<?php echo $_GET['id_usuario'] ?>">
 		<p>
-		  <label for="email">Nombre Completo</label>
+		<center>  <label for="email">Nombre</label> </center>
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" value="<?php echo $user['nombre'] ?>" required>
 		</p>
 		<p>
-		  <label for="password">Rut</label>
+		<center>  <label for="password">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" value="<?php echo $user['rut'] ?>" required>
 		</p>
         <p>
@@ -68,7 +68,7 @@ include("../funciones/setup.php");
                                 </div>
 		</p>
         <p>
-		  <label for="password">Contraseña</label>
+		<center>  <label for="password">Contraseña</label> </center>
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
 		<center>

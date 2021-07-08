@@ -32,21 +32,21 @@
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_usuarios_ingresar.php" >
-		<h1>Crear Usuario</h1>
+		<h1>Ingresar Usuario</h1>
 		<center>
 		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		 <center> <label for="email">Nombre Completo</label> </center>
+		 <center> <label for="email">Nombre</label> </center>
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
 		</p>
 		<p>
-		  <label for="password">Rut</label>
+		<center>  <label for="password">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
 		</p>
         <p>
-		  <label for="password">Tipo de Usuario</label>
+		<center>  <label for="password">Tipo de Usuario</label> </center>
           <div class="select">
           <select  name="tipo_usuario" id="tipo_usuario">
                                     <option disabled="disabled" selected="selected">Seleccionar</option>
@@ -57,13 +57,12 @@
                                 </div>
 		</p>
         <p>
-		  <label for="password">Contraseña</label>
+		<center>  <label for="password">Contraseña</label> </center>
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
-		<br> <br>
-		
+		<br> <br>	
 		</center>
 
 	  </form>

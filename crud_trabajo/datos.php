@@ -11,7 +11,7 @@ where id_sector='$_POST[id_sector]'";
 
 $result=mysqli_query(conectar(),$sql);
 
-$cadena="<label>SELECT 2 (paises)</label> 
+$cadena="<center><label>Lugar</label> </center> 
 			<select id='lista2' name='lugar'>";
 
 	while ($ver=mysqli_fetch_row($result)) {

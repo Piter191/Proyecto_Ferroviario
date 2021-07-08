@@ -32,25 +32,25 @@
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_trabajadores_ingresar.php" >
-		<h1>Crear Trabajador</h1>
+		<h1>Ingresar Trabajador</h1>
 		<center>
 		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="nombre">Nombre Completo</label>
+		 <center> <label for="nombre">Nombre</label> </center>
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
 		</p>
 		<p>
-		  <label for="rut">Rut</label>
+		<center>  <label for="rut">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
 		</p>
         <p>
-		  <label for="contraseña">Contraseña</label>
+		<center>  <label for="contraseña">Contraseña</label> </center>
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
 		</p>
     <p>
-		  <label for="telefono">Telefono</label>
+		<center>  <label for="telefono">Telefono</label> </center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" required>
 		</p>
 		

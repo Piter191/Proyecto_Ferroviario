@@ -37,26 +37,27 @@
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_trabajo_ingresar_admin.php" >
-		<h1>Crear Orden de Trabajo</h1>
+		<h1>Ingresar Orden de Trabajo</h1>
 		<center>
 		<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="hora_inicio">Hora de Inicio</label>
+		 <center> <label for="hora_inicio">Hora de Inicio</label> 
           <input class="input-time"  type="time" name="hora_inicio" id="hora_inicio" required>
+		  </center>
 		</p>
 		<p>
-		  <label for="hora_termino">Hora de Termino</label>
+		<center>  <label for="hora_termino">Hora de Termino</label> <center>
 		  <input  type="time" name="hora_termino" id="hora_termino" required>
 		</p>
         <p>
-		  <label for="password">Trabajador</label> 
+	<center> <label for="password">Trabajador</label> </center>
 		  <div class="select" id="trabajadores" name="trabajadores"> 
          </div>
 		</p>
 		<p>
-		  <label for="password">Sector</label> 
+	<center> <label for="password">Sector</label> </center>
 		  <select id="lista1" name="lista">
 		<option value="0">Seleccione una opcion</option>
 		<option value="1">Linea 3 </option>
