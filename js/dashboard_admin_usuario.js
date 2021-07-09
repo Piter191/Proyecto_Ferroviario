@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/tablas.css"></link>
+
 $('#userId').on('click', () => {
     $.get('./get_all_users.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
