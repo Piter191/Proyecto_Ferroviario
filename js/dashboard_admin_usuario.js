@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="css/tablas.css"></link>
+
 $('#userId').on('click', () => {
     $.get('./get_all_users.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
-
+        <link rel="stylesheet" href="css/tablas.css"></link>
        <center>
     <h2>Mantenedor de Usuarios </h2></center> <br>
   <button class="btn btn-dark" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
