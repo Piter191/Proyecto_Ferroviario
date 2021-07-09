@@ -1,12 +1,4 @@
-if(document.createStyleSheet) {
-    document.createStyleSheet('css/tablasjs.css');
-  }
-  else {
-    var styles = "@import url(' css/tablasjs.css ');";
-    var newSS=document.createElement('link');
-    newSS.rel='stylesheet';
-    newSS.href='data:text/css,'+escape(styles);
-    document.getElementsByTagName("head")[0].appendChild(newSS);
+
 
 $('#userId').on('click', () => {
     $.get('./get_all_users.php',  // url
