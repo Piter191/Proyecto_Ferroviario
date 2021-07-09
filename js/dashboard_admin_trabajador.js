@@ -12,10 +12,10 @@ $('#trabajadorId').on('click', () => {
         <thead>
             
                 <tr>
-                    <th>Nombre</th>
-                    <th>Rut</th>
-                    <th>Teléfono</th>
-                    <th>Opciones</th>
+                    <th class="th-sm table-success">Nombre</th>
+                    <th class="th-sm table-success">Rut</th>
+                    <th class="th-sm table-success">Teléfono</th>
+                    <th class="th-sm table-success">Opciones</th>
                 </tr>
                 </thead>
                 <tbody>

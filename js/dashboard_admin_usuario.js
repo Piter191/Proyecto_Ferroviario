@@ -4,7 +4,7 @@ $('#userId').on('click', () => {
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
-        <link rel="stylesheet" href="css/tablas.css"></link>
+
        <center>
     <h2>Mantenedor de Usuarios </h2></center> <br>
   <button class="btn btn-dark" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
@@ -13,11 +13,11 @@ $('#userId').on('click', () => {
             <table id="tabla_usuarios" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
                 <thead>
                 <tr>
-                    <th class="th-sm">Nombre</th>
-                    <th class="th-sm">Rut</th>
-                    <th class="th-sm">Tipo usuario</th>
-                    <th class="th-sm">Estado</th>
-                    <th class="th-sm">Opciones</th>
+                    <th class="th-sm table-primary">Nombre</th>
+                    <th class="th-sm table-primary">Rut</th>
+                    <th class="th-sm table-primary">Tipo usuario</th>
+                    <th class="th-sm table-primary">Estado</th>
+                    <th class="th-sm table-primary">Opciones</th>
                     
                 </tr>
                 </thead>

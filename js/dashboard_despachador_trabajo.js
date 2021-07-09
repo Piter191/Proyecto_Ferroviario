@@ -11,11 +11,12 @@ $('#trabajoId').on('click', () => {
         <table id="tabla_trabajo" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
         <thead>
                 <tr>
-                <th>Hora de inicio</th>
-                <th>Hora de termino</th>
-                <th>Trabajador</th>
-                <th>Lugar</th>
-                <th>Opciones</th>
+                <th class="th-sm table-danger">Hora de inicio</th>
+                <th class="th-sm table-danger">Hora de termino</th>
+                <th class="th-sm table-danger">Trabajador</th>
+                <th class="th-sm table-danger">Lugar</th>
+                <th class="th-sm table-danger">Sector</th>
+                <th class="th-sm table-danger">Opciones</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -27,6 +28,7 @@ $('#trabajoId').on('click', () => {
             <td> ${user.hora_termino} </td>
             <td> ${user.nombre_trabajador} </td>
             <td> ${user.nombre_lugar} </td>
+            <td> ${user.nombre_sector} </td>
             <td>
 
                 <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
