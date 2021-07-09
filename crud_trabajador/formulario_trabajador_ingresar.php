@@ -65,7 +65,7 @@
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
 		</p>
     <p>
-		<center>  <label for="telefono">Telefono</label> </center>
+		<center>  <label for="telefono">Telefono +56 9</label> </center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" onkeypress="return valideKey(event);" required>
 		</p>
 		

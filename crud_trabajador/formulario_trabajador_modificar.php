@@ -77,7 +77,7 @@ include("../funciones/setup.php");
           <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
     <p>
-	<center><label for="telefono">Telefono</label></center>
+	<center><label for="telefono">Telefono +56 9</label></center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" value="<?php echo $user['telefono'] ?>" onkeypress="return valideKey(event);" required>
 		</p>
 		
