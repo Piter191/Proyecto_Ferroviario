@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style_dashboard.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
-
+  <link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 
   <title>Dashboard Visualizador</title>
 </head>

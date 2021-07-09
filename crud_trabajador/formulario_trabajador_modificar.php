@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
+<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 <?php
 include("../funciones/setup.php");
 	$id_trabajador=$_GET['id_trabajador'];
