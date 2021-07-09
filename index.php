@@ -17,6 +17,7 @@ https://templatemo.com/tm-536-dream-pulse
     <link rel="stylesheet" href="slick/slick-theme.css"/>    
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/templatemo-dream-pulse.css" />
+    <link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
   </head>
   <body>
     <main class="container-fluid">
