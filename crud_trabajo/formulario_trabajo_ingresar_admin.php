@@ -48,8 +48,8 @@
 			</p>
 			<p>
 				<center> <label for="hora_termino">Hora de Termino</label>
-					<center>
 						<input type="time" name="hora_termino" id="hora_termino" required>
+				</center>
 			</p>
 			<p>
 				<center> <label for="password">Trabajador</label> </center>
@@ -71,8 +71,9 @@
 		</div>
 		</p>
 		<center> <label for="password">Estado</label> </center>
-		<div class="select">
-			<select name="estado" id="estado">
+		<div class="select" >
+		<center>
+		<select name="estado" id="estado" style="width:250px">
 				<option disabled="disabled" selected="selected">Seleccionar</option>
 				<option>Iniciado</option>
 				<option>En Progreso</option>
@@ -80,6 +81,7 @@
 				<option>Suspendido</option>
 				<option>Interrumpido</option>
 			</select>
+		</center>
 		</div>
 		</p> <br>
 		<br>
