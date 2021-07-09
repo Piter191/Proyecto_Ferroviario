@@ -1,10 +1,19 @@
+if(document.createStyleSheet) {
+    document.createStyleSheet('css/tablasjs.css');
+  }
+  else {
+    var styles = "@import url(' css/tablasjs.css ');";
+    var newSS=document.createElement('link');
+    newSS.rel='stylesheet';
+    newSS.href='data:text/css,'+escape(styles);
+    document.getElementsByTagName("head")[0].appendChild(newSS);
 
 $('#userId').on('click', () => {
     $.get('./get_all_users.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
-        <link rel="stylesheet" href="css/tablas.css"></link>
+
        <center>
     <h2>Mantenedor de Usuarios </h2></center> <br>
   <button class="btn btn-dark" onclick="tableToExcel('tabla_usuarios', 'W3C Example Table')"> <img src="img/exporta_excel.png" width="30px" height="30px">Exportar a Excel</button>
