@@ -66,7 +66,7 @@
 		</p>
     <p>
 		<center>  <label for="telefono">Telefono +56 9</label> </center>
-          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" onkeypress="return valideKey(event);" required>
+          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" maxlength="8" minlength="8" onkeypress="return valideKey(event);" required>
 		</p>
 		
 		<center>

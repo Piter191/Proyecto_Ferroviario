@@ -78,7 +78,7 @@ include("../funciones/setup.php");
 		</p>
     <p>
 	<center><label for="telefono">Telefono +56 9</label></center>
-          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" value="<?php echo $user['telefono'] ?>" onkeypress="return valideKey(event);" required>
+          <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" maxlength="8" minlength="8" value="<?php echo $user['telefono'] ?>" onkeypress="return valideKey(event);" required>
 		</p>
 		
 		<center>
