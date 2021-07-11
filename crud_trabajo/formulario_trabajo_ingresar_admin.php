@@ -42,8 +42,18 @@
 		</center>
 		<div class="inset">
 			<p>
+				<center> <label for="fecha_inicio">Fecha de Inicio</label>
+					<input class="input-time" type="date" name="fecha_inicio" id="fecha_inicio" required>
+				</center>
+			</p>
+			<p>
 				<center> <label for="hora_inicio">Hora de Inicio</label>
 					<input class="input-time" type="time" name="hora_inicio" id="hora_inicio" required>
+				</center>
+			</p>
+			<p>
+				<center> <label for="fecha_termino">Fecha de Termino</label>
+					<input class="input-time" type="date" name="fecha_termino" id="fecha_termino" required>
 				</center>
 			</p>
 			<p>

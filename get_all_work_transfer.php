@@ -19,6 +19,9 @@ while($datos=mysqli_fetch_array($data)) {
         'nombre_trabajador' => $datos['nombre_trabajador'],
         'nombre_lugar' => $datos['nombre_lugar'],
         'nombre_sector' => $datos['nombre_sector'],
+        'fecha_inicio' => $datos['fecha_inicio'],
+        'fecha_termino' => $datos['fecha_termino'],
+
     
         
     ));
