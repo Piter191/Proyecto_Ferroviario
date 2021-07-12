@@ -27,8 +27,6 @@
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
 <link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
-
-
 </head>
 <body>
 <form method="POST" action="../controladores/ctrl_usuarios_ingresar.php" >
