@@ -8,7 +8,7 @@ if ( valida_rut($_POST['rut']) )
 }
 else
 {
-	header('Location:../crud_usuario/formulario_usuario_ingresar.php');
+	header('Location:../index.php');
 }
 
 ?>

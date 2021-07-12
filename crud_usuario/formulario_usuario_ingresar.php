@@ -56,7 +56,7 @@
 		</p>
         <p>
 		<center>  <label for="password">Contraseña</label> </center>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
+          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" maxlength="8" minlength="6" required>
 		</p>
 		<p>
 		<center>  <label for="password">Estado</label> </center>
