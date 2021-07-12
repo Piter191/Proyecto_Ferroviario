@@ -115,7 +115,7 @@
 						</div>
 						<!-- Modal body with image -->
 						<div class="modal-body">
-							<img src="../img/Mapa_Mina.png" style="max-width:100%;height:auto;" />
+							<img src="../img/Mapa_Mina2.0.jpg" style="max-width:100%;height:auto;" />
 						</div>
 					</div>
 				</div>
