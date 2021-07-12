@@ -43,22 +43,22 @@
 		<div class="inset">
 			<p>
 				<center> <label for="fecha_inicio">Fecha de Inicio</label>
-					<input class="input-time" type="date" name="fecha_inicio" id="fecha_inicio" required>
+					<input class="input-time" type="date" name="fecha_inicio" id="fecha_inicio" style="width:250px" required>
 				</center>
 			</p>
 			<p>
 				<center> <label for="hora_inicio">Hora de Inicio</label>
-					<input class="input-time" type="time" name="hora_inicio" id="hora_inicio" required>
+					<input class="input-time" type="time" name="hora_inicio" id="hora_inicio" style="width:250px" required>
 				</center>
 			</p>
 			<p>
 				<center> <label for="fecha_termino">Fecha de Termino</label>
-					<input class="input-time" type="date" name="fecha_termino" id="fecha_termino" required>
+					<input class="input-time" type="date" name="fecha_termino" id="fecha_termino" style="width:250px" required>
 				</center>
 			</p>
 			<p>
 				<center> <label for="hora_termino">Hora de Termino</label>
-					<input type="time" name="hora_termino" id="hora_termino" required>
+					<input type="time" name="hora_termino" id="hora_termino" style="width:250px" required>
 				</center>
 			</p>
 			<p>
