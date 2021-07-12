@@ -4,7 +4,7 @@ $('#mapaId').on('click', () => {
     <h1>Mapa de la mina</h1>
 
 
-    <img src="img/Mapa Mina.png" alt="" width="918" height="739" usemap="#Mapa_MinaMap" id="Mapa_Mina" title="Mapa_Mina"/>
+    <img src="img/Mapa_Mina.png" alt="" width="918" height="739" usemap="#Mapa_MinaMap" id="Mapa_Mina" title="Mapa_Mina"/>
     <map name="Mapa_MinaMap">
   <area shape="poly" coords="250,671" href="#">
   <area shape="poly" coords="250,671,227,531,301,365,341,507" href="#" alt="Puente de Vaciado">
