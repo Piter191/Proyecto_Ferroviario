@@ -121,7 +121,7 @@
 					</div>
 				</div>
 			</div>
-			<br>
+			<br> <br>
 			<center>
 				<input type="submit" name="go" id="go" value="Registrar">
 				<br> <br>
