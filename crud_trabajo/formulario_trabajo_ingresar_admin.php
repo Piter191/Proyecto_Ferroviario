@@ -101,7 +101,7 @@
 
 			<!--Bootstrap modal -->
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog" role="document">
+				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 						<!-- Modal heading -->
 						<div class="modal-header">
@@ -116,7 +116,7 @@
 						</div>
 						<!-- Modal body with image -->
 						<div class="modal-body">
-							<img src="/img/Mapa_Mina.png">
+							<img src="../img/Mapa_Mina.png" style="max-width:100%;height:auto;" />
 						</div>
 					</div>
 				</div>

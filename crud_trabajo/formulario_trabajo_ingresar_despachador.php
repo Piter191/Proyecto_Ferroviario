@@ -94,6 +94,34 @@
 		</p> <br>
 		<br>
 		<center>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				Ver Mapa
+			</button>
+
+			<!--Bootstrap modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<!-- Modal heading -->
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								Mapa Mina
+							</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">
+									×
+								</span>
+							</button>
+						</div>
+						<!-- Modal body with image -->
+						<div class="modal-body">
+							<img src="../img/Mapa_Mina.png" style="max-width:100%;height:auto;" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+		<center>
 			<input type="submit" name="go" id="go" value="Registrar">
 			<br> <br>
 
