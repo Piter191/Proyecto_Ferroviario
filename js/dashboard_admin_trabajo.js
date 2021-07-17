@@ -33,6 +33,11 @@ $('#trabajoId').on('click', () => {
                 <td> ${user.estado} </td>
 
                 <td>
+                <a class="btn btn-dark"   href="./crud_trabajo/formulario_trabajo_modificar_admin.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+                <i class="icon ion-md-hammer"></i>
+                </a>
+
+
                 <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_administrador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                  </a> 

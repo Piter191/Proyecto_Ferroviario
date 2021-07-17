@@ -30,6 +30,9 @@ $('#trabajoId').on('click', () => {
             <td> ${user.nombre_lugar} </td>
             <td> ${user.nombre_sector} </td>
             <td>
+            <a class="btn btn-dark"   href="./crud_trabajo/formulario_trabajo_modificar_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+                <i class="icon ion-md-hammer"></i>
+                </a>
 
                 <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
