@@ -13,12 +13,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<?php
-// Te recomiendo utilizar esta conección, la que utilizas ya no es la recomendada. 
-$link = new PDO('mysql:host=localhost;dbname=hotel', 'root', ''); // el campo vaciío es para la password. 
-
-?>
-
 <table class="table table-striped">
   	
 		<thead>
