@@ -16,6 +16,7 @@ $('#trabajoId').on('click', () => {
                 <th class="th-sm table-danger">Trabajador</th>
                 <th class="th-sm table-danger">Lugar</th>
                 <th class="th-sm table-danger">Sector</th>
+                <th class="th-sm table-danger">Estado</th>
                 <th class="th-sm table-danger">Opciones</th>
                 </tr>
                 </thead>
@@ -29,6 +30,7 @@ $('#trabajoId').on('click', () => {
             <td> ${user.nombre_trabajador} </td>
             <td> ${user.nombre_lugar} </td>
             <td> ${user.nombre_sector} </td>
+            <td> ${user.estado} </td>
             <td>
             <a class="btn btn-dark"   href="./crud_trabajo/formulario_trabajo_modificar_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
                 <i class="icon ion-md-hammer"></i>
