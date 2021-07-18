@@ -7,7 +7,7 @@
 	include('funciones/setup.php');
 
 	?>
-	<title>Trabajos en la Sector de los Talleres</title>
+	<title>Trabajos en sector Portal Tunel</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
