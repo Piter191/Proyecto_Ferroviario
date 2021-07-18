@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-<?php 
+	<?php
 
-include('funciones/setup.php');
+	include('funciones/setup.php');
 
- ?>
-	<title>Example</title>
+	?>
+	<title>Trabajos en la Sector de los Talleres</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
@@ -25,40 +26,40 @@ include('funciones/setup.php');
 		<thead>
 			<tr>
 				<th class="th-sm table-danger">Fecha de inicio</th>
-				<th class="th-sm table-danger">Fecha de termino</th>
+				<th class="th-sm table-danger">Hora Inicio</th>
+				<th class="th-sm table-danger">Fecha Termino</th>
+				<th class="th-sm table-danger">Hora de Termino</th>
+				<th class="th-sm table-danger">Nombre Lugar</th>
+				<th class="th-sm table-danger">Nombre Sector</th>
 				<th class="th-sm table-danger">Trabajador</th>
-				<th class="th-sm table-danger">Lugar</th>
-				<th class="th-sm table-danger">Sector</th>
+				<th class="th-sm table-danger">Estado</th>
 			</tr>
 		</thead>
 		<?php
-	$sql = "SELECT
-	tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador, tabla_lugares.id_sector AS nombre_sector
-   FROM trabajo_transporte
-   INNER JOIN
-	 tabla_lugares ON tabla_lugares.id = trabajo_transporte.id
-	INNER JOIN
-	 trabajador ON trabajador.id_trabajador = trabajo_transporte.id_trabajador";
-		$result=mysqli_query(conectar(),$sql);
-
-		while($mostrar=mysqli_fetch_array($result)){
-
+		$sql = "SELECT
+	    tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador, tabla_lugares.id_sector AS nombre_sector
+        FROM trabajo_transporte
+        INNER JOIN
+	    tabla_lugares ON tabla_lugares.id = trabajo_transporte.id
+	    INNER JOIN
+	    trabajador ON trabajador.id_trabajador = trabajo_transporte.id_trabajador
+	    WHERE estado = 'En Progreso' and tabla_lugares.id_sector = 'Talleres'";
+		$result = mysqli_query(conectar(), $sql);
+		while ($mostrar = mysqli_fetch_array($result)) {
 		?>
-	
 			<tr>
-				<td><?php echo $dato['Fecha_Inicio'] // aca te faltaba poner los echo para que se muestre el valor de la variable.
-					?></td>
-				<td><?php echo $dato['Fecha_Termino'] ?></td>
-				<td><?php echo $dato['Trabajador'] ?></td>
-				<td><?php echo $dato['Lugar'] ?></td>
-				<td><?php echo $dato['Sector'] ?></td>
-
-				
+				<td><?php echo $mostrar['fecha_inicio'] ?>
+				<td><?php echo $mostrar['hora_inicio'] ?>
+				<td><?php echo $mostrar['fecha_termino'] ?>
+				<td><?php echo $mostrar['hora_termino'] ?></td>
+				<td><?php echo $mostrar['nombre_lugar'] ?></td>
+				<td><?php echo $mostrar['nombre_sector'] ?></td>
+				<td><?php echo $mostrar['nombre_trabajador'] ?></td>
+				<td><?php echo $mostrar['estado'] ?></td>
 			</tr>
 		<?php
 		}
 		?>
 	</table>
 </body>
-
 </html>
