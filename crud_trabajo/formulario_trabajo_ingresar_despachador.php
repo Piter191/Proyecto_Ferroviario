@@ -88,8 +88,6 @@
 					<option>Iniciado</option>
 					<option>En Progreso</option>
 					<option>Terminado</option>
-					<option>Suspendido</option>
-					<option>Interrumpido</option>
 				</select>
 			</center>
 		</div>
