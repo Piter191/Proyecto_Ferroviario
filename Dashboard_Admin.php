@@ -83,11 +83,11 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
- <script src='./js/dashboard_admin_usuario.js'></script>
+    <script src='./js/inicio_admin.js'></script>
+    <script src='./js/dashboard_admin_usuario.js'></script>
   <script src='./js/dashboard_admin_trabajador.js'></script>
   <script src='./js/dashboard_admin_trabajo.js'></script>
   <script src='./js/dashboard_admin_tren.js'></script>
-  <script src='./js/inicio_admin.js'></script>
   <script src='./js/mapa.js'></script>
   <script src='./js/tableToExcel.js'></script>
   

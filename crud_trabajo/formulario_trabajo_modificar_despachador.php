@@ -96,10 +96,23 @@ include("../funciones/setup.php");
 		<div class="select">
 			<center>
 				<select name="estado" id="estado" style="width:250px">
-					<option disabled="disabled" selected="selected">Seleccionar</option>
-					<option>Iniciado</option>
+				<?php if($user['estado'] == 'Iniciado'){?>
+					<option selected>Iniciado</option>
 					<option>En Progreso</option>
 					<option>Terminado</option>
+				<?php } ?>
+				
+				<?php if($user['estado'] == 'En Progreso'){?>
+					<option>Iniciado</option>
+					<option selected>En Progreso</option>
+					<option>Terminado</option>
+				<?php } ?>
+
+				<?php if($user['estado'] == 'Terminado'){?>
+					<option>Iniciado</option>
+					<option>En Progreso</option>
+					<option selected>Terminado</option>
+				<?php } ?>
 				</select>
 			</center>
 		</div>

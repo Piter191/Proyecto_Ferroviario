@@ -61,12 +61,28 @@ include("../funciones/setup.php");
 		  <label for="password">Tipo de Usuario</label>
           <div class="select">
           <select  name="tipo_usuario" id="tipo_usuario">
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
-                                    <option>Administrador</option>
-                                    <option>Despachador</option>
-									<option>Visualizador</option>
-                                </select>
-                                </div>
+			<?php if($user['tipo_usuario'] == 'Administrador'){?>
+
+				<option selected>Administrador</option>
+				<option >Despachador</option>
+				<option>Visualizador</option>
+			<?php } ?>
+
+			<?php if($user['tipo_usuario'] == 'Despachador'){?>
+
+				<option>Administrador</option>
+				<option selected>Despachador</option>
+				<option>Visualizador</option>
+			<?php } ?>
+			
+			<?php if($user['tipo_usuario'] == 'Visualizador'){?>
+
+				<option>Administrador</option>
+				<option>Despachador</option>
+				<option selected>Visualizador</option>
+			<?php } ?>
+		</select>
+		</div>
 		</p>
         <p>
 		<center>  <label for="password">Contraseña</label> </center>
@@ -75,12 +91,20 @@ include("../funciones/setup.php");
 		<p>
 		<center>  <label for="password">Estado</label> </center>
           <div class="select">
-          <select  name="estado" id="estado">
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
-                                    <option>Activo</option>
-                                    <option>Inactivo</option>
-                                </select>
-                                </div>
+        <select  name="estado" id="estado">
+
+		<?php if($user['estado'] == 'Activo'){?>
+			<option selected>Activo</option>
+			<option>Inactivo</option>
+		<?php } ?>
+
+		<?php if($user['estado'] == 'Inactivo'){?>
+			<option>Activo</option>
+			<option selected>Inactivo</option>
+		<?php } ?>
+		
+		</select>
+		</div>
 		</p>
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">
