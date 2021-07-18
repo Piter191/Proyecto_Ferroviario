@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+<?php 
+
+include('funciones/setup.php');
+
+ ?>
 	<title>Example</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,13 +32,19 @@
 			</tr>
 		</thead>
 		<?php
+	$sql = "SELECT
+	tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador, tabla_lugares.id_sector AS nombre_sector
+   FROM trabajo_transporte
+   INNER JOIN
+	 tabla_lugares ON tabla_lugares.id = trabajo_transporte.id
+	INNER JOIN
+	 trabajador ON trabajador.id_trabajador = trabajo_transporte.id_trabajador";
+		$result=mysqli_query(conectar(),$sql);
 
-		$sql = "SELECT comunas.nombre_comunas, usuarios.* FROM comunas INNER JOIN usuarios ON usuarios.id_comunas = comunas.id_comunas";
-		$result = mysqli_query(conectar(), $sql); // EJECUTAMOS LA QUERY
-		while ($dato = mysqli_fetch_array($result)) {
+		while($mostrar=mysqli_fetch_array($result)){
 
 		?>
-			?>
+	
 			<tr>
 				<td><?php echo $dato['Fecha_Inicio'] // aca te faltaba poner los echo para que se muestre el valor de la variable.
 					?></td>
@@ -41,6 +52,8 @@
 				<td><?php echo $dato['Trabajador'] ?></td>
 				<td><?php echo $dato['Lugar'] ?></td>
 				<td><?php echo $dato['Sector'] ?></td>
+
+				
 			</tr>
 		<?php
 		}
