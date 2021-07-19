@@ -40,13 +40,14 @@
           <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
 		</p>
 		<p>
-		<center>  <label for="password">Rut</label> </center>
-		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
+		<center>  <label for="password">Rut </label> </center>
+		
+		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
         <p>
 		<center>  <label for="password">Tipo de Usuario</label> </center>
           <div class="select">
-          <select  name="tipo_usuario" id="tipo_usuario">
+          <select  name="tipo_usuario" id="tipo_usuario" required>
                                     <option disabled="disabled" selected="selected">Seleccionar</option>
                                     <option>Administrador</option>
                                     <option>Despachador</option>
@@ -75,4 +76,5 @@
 
 	  </form>
 </body>
+<script src="../js/validarRUT.js"></script>
 </html>

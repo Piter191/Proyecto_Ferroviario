@@ -58,7 +58,7 @@
 		</p>
 		<p>
 		<center>  <label for="rut">Rut</label> </center>
-		  <input  type="text" placeholder="Ingresa tu rut" name="rut" id="rut" required>
+		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
         <p>
 		<center>  <label for="contraseña">Contraseña</label> </center>
@@ -77,4 +77,5 @@
 
 	  </form>
 </body>
+<script src="../js/validarRUT.js"></script>
 </html>
