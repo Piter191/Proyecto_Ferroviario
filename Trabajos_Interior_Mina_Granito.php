@@ -20,9 +20,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-	<table class="table table-striped">
 
+
+
+
+<body>
+<center>
+	<h1>Trabajos de Interior de Mina Granito </h1> <br> <br>
+	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th class="th-sm table-danger">Fecha de inicio</th>

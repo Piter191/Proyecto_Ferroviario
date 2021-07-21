@@ -64,32 +64,7 @@ https://templatemo.com/tm-536-dream-pulse
                   </a>
                 </li>
               </ul>
-              <ul class="nav flex-row tm-social-links">
-                <li class="nav-item">
-                  <a href="https://facebook.com" class="nav-link tm-social-link">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://twitter.com" class="nav-link tm-social-link">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://dribbble.com" class="nav-link tm-social-link">
-                    <i class="fab fa-dribbble"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://linkedin.com" class="nav-link tm-social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-              <footer class="text-center text-white small">
-                  <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
-                </p>
-              </footer>
+ 
             </div>
           </nav>
           

@@ -49,21 +49,21 @@
 </head>
 <body>
 	<form  action="controladores/ctrl_login_visualizador.php" method="post" name="form1">
-		<h1>Iniciar Sesión</h1>
+		<h1>Iniciar Sesión - Visualizador</h1>
 		<center>
 		<img src="img/Logo_GEOTREN.png" width="120px" height="100px">
 	</center>
 		<div class="inset">
 		<p>
-		  <label for="email">RUT</label>
-		  <input type="text"  id="frmrut" name="frmrut" class="text">
+		<center> <label for="email">RUT</label> </center>
+		  <input type="text"  id="frmrut" name="frmrut" placeholder="Ingrese su rut" class="text">
 		</p>
 		<p>
-		  <label for="password">CLAVE</label>
-		  <input type="password" name="frmclave" id="frmclave" class="text" maxlength="8" minlength="6">
+	<center> <label for="password">CLAVE</label> </center>
+		  <input type="password" name="frmclave" id="frmclave" placeholder="Ingrese su clave" class="text" maxlength="8" minlength="6">
 		</p>
 		<center>
-		<input type="submit" name="go" id="go" value="Log in">
+		<input type="submit" name="go" id="go" value="Iniciar Sesión">
 		<br> <br>
 		
 		</center>

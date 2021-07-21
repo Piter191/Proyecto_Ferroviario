@@ -21,8 +21,9 @@
 </head>
 
 <body>
-	<table class="table table-striped">
-
+<center>
+	<h1>Trabajos de Linea 3 </h1> <br> <br>
+	<table class="table table-striped" >
 		<thead>
 			<tr>
 				<th class="th-sm table-danger">Fecha de inicio</th>

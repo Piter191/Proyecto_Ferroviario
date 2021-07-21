@@ -21,8 +21,9 @@
 </head>
 
 <body>
+<center>
+	<h1>Trabajos de Talleres </h1> <br> <br>
 	<table class="table table-striped">
-
 		<thead>
 			<tr>
 				<th class="th-sm table-danger">Fecha de inicio</th>
