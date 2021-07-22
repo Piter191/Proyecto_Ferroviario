@@ -1,5 +1,5 @@
 $(() => {
-    $.get("../get_all_workers.php", (data) =>{
+    $.get("../get_all_workers_activos.php", (data) =>{
        const workers = data;
        let select = `
        <select id="trabajadores" name="trabajadores">

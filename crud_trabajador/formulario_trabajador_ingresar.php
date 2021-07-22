@@ -60,14 +60,21 @@
 		<center>  <label for="rut">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
-        <p>
-		<center>  <label for="contraseña">Contraseña</label> </center>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" required>
-		</p>
+        
     <p>
 		<center>  <label for="telefono">Telefono +56 9</label> </center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" maxlength="8" minlength="8" onkeypress="return valideKey(event);" required>
 		</p>
+		<p>
+		<center>  <label for="password">Estado</label> </center>
+          <div class="select">
+          <select  name="estado" id="estado" required>
+                                    <option  value="">Seleccionar</option>
+                                    <option>Activo</option>
+                                    <option>Inactivo</option>
+                                </select>
+                                </div>
+		</p> <br>
 		
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">

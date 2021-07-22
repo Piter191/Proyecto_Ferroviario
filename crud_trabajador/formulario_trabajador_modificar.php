@@ -72,14 +72,28 @@ include("../funciones/setup.php");
 		<center>  <label for="rut">Rut</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" value="<?php echo $user['rut'] ?>" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
-        <p>
-	<center><label for="contraseña">Contraseña</label></center>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
-		</p>
     <p>
 	<center><label for="telefono">Telefono +56 9</label></center>
           <input type="text" placeholder="Ingresa tu telefono" name="telefono" id="telefono" maxlength="8" minlength="8" value="<?php echo $user['telefono'] ?>" onkeypress="return valideKey(event);" required>
 		</p>
+
+		<p>
+		<center>  <label for="password">Estado</label> </center>
+          <div class="select">
+        <select  name="estado" id="estado">
+
+		<?php if($user['estado'] == 'Activo'){?>
+			<option selected>Activo</option>
+			<option>Inactivo</option>
+		<?php } ?>
+
+		<?php if($user['estado'] == 'Inactivo'){?>
+			<option>Activo</option>
+			<option selected>Inactivo</option>
+		<?php } ?>
+		
+		</select>
+		<br> <br>
 		
 		<center>
 		<input type="submit" name="go" id="go" value="Registrar">

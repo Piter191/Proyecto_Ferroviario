@@ -15,6 +15,7 @@ $('#trabajadorId').on('click', () => {
                     <th class="th-sm table-success">Nombre</th>
                     <th class="th-sm table-success">Rut</th>
                     <th class="th-sm table-success">Teléfono</th>
+                    <th class="th-sm table-success">Estado</th>
                     <th class="th-sm table-success">Opciones</th>
                 </tr>
                 </thead>
@@ -26,6 +27,7 @@ $('#trabajadorId').on('click', () => {
                 <td> ${user.nombre} </td>
                 <td> ${user.rut} </td>
                 <td>+56 9${user.telefono} </td>
+                <td> ${user.estado} </td>
                 <td> 
                 <a class="btn btn-dark"   href="./crud_trabajador/formulario_trabajador_modificar.php?id_trabajador=${user.id_trabajador}"  role="button">
                 <i class="icon ion-md-hammer"></i>
