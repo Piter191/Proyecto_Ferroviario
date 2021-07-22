@@ -68,8 +68,8 @@
 			</p>
 			<p>
 				<center> <label for="password">Sector</label> </center>
-				<select id="lista1" name="lista1">
-					<option disabled value="0">Seleccione una opcion</option>
+				<select id="lista1" name="lista1" required>
+					<option value="">Seleccione una opcion</option>
 					<option value="Linea 3">Linea 3 </option>
 					<option value="Interior Mina Granito">Interior Mina Granito </option>
 					<option value="Portal Tunel">Portal Tunel </option>
@@ -83,8 +83,8 @@
 		<center> <label for="password">Estado</label> </center>
 		<div class="select">
 			<center>
-				<select name="estado" id="estado" style="width:250px">
-					<option disabled="disabled" selected="selected">Seleccionar</option>
+				<select name="estado" id="estado" style="width:250px" required>
+					<option value="">Seleccionar</option>
 					<option>Iniciado</option>
 					<option>En Progreso</option>
 					<option>Terminado</option>

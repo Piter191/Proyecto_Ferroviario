@@ -48,7 +48,7 @@
 		<center>  <label for="password">Tipo de Usuario</label> </center>
           <div class="select">
           <select  name="tipo_usuario" id="tipo_usuario" required>
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
+                                    <option value="">Seleccionar</option>
                                     <option>Administrador</option>
                                     <option>Despachador</option>
 									<option>Visualizador</option>
@@ -62,8 +62,8 @@
 		<p>
 		<center>  <label for="password">Estado</label> </center>
           <div class="select">
-          <select  name="estado" id="estado">
-                                    <option disabled="disabled" selected="selected">Seleccionar</option>
+          <select  name="estado" id="estado" required>
+                                    <option  value="">Seleccionar</option>
                                     <option>Activo</option>
                                     <option>Inactivo</option>
                                 </select>
