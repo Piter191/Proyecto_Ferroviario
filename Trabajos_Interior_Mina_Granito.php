@@ -48,7 +48,7 @@
 	    tabla_lugares ON tabla_lugares.id = trabajo_transporte.id
 	    INNER JOIN
 	    trabajador ON trabajador.id_trabajador = trabajo_transporte.id_trabajador
-	    WHERE estado = 'En Progreso' and tabla_lugares.id_sector = 'Interior Mina Granito'";
+	    WHERE trabajo_transporte.estado = 'En Progreso' and tabla_lugares.id_sector = 'Interior Mina Granito'";
 		$result = mysqli_query(conectar(), $sql);
 		while ($mostrar = mysqli_fetch_array($result)) {
 		?>
