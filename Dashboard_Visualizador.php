@@ -31,7 +31,7 @@ if(isset($_SESSION['user']))
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
   <link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 
-  <title>Dashboard Visualizador</title>
+  <title>GEOTREN - Visualizador</title>
 </head>
 <body>
 
@@ -40,7 +40,7 @@ if(isset($_SESSION['user']))
     <div id="sidebar-container" class="bg-primary">
       <div class="logo">
       <center>
-        <h4 class="text-light font-weight-bold" >Panel Visualizador</h4>
+        <h4 class="text-light font-weight-bold" >GEOTREN - Visualizador</h4>
         <img src="img/Logo_GEOTREN.png" width="150px" height="100px">
         <center>
       </div>
