@@ -40,6 +40,21 @@ include("../funciones/setup.php");
 	{
 ?>
 
+<script language="JavaScript" type="text/JavaScript">
+function envia(obj){
+if(
+(parseInt(document.getElementById("fecha_inicio").value,10)<parseInt(document.getElementById("fecha_termino").value,10))
+&& !isNaN(parseInt(document.getElementById("fecha_inicio").value,10))
+&& !isNaN(parseInt(document.getElementById("fecha_termino").value,10))
+){
+ obj.submit();
+}else{
+alert("La fecha de termino debe ser superior a la de inicio");
+window.location.reload(); 
+}
+}
+</script>
+
 
 </head>
 
@@ -146,7 +161,7 @@ include("../funciones/setup.php");
 			</div>
 			<br> <br>
 			<center>
-				<input type="submit" name="go" id="go" value="Registrar">
+				<input type="submit" name="go" id="go" onClick="envia(this)" value="Registrar">
 				<br> <br>
 
 			</center>
