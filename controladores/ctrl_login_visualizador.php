@@ -4,7 +4,7 @@ include("../funciones/setup.php");
 
 //echo $_POST['frmusuario']."-".$_POST['frmclave']
 
-$sql="select * from usuario where rut='".$_POST['frmrut']."' and clave='".$_POST['frmclave']."' and tipo_usuario = 'Visualizador' estado = 'Activo'";
+$sql="select * from usuario where rut='".$_POST['frmrut']."' and clave='".$_POST['frmclave']."' and tipo_usuario = 'Visualizador' and estado = 'Activo'";
 $result=mysqli_query(conectar(),$sql);
 $num=mysqli_num_rows($result);
 $datos=mysqli_fetch_array($result);
