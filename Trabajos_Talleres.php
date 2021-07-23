@@ -18,6 +18,7 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 </head>
 
 <body>

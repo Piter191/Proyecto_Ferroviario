@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
-	<title>Ingreso de Trabajo</title>
+	<link rel="icon" href="../img/favicon_geotren.ico" type="image/x-icon" />
+	<title>Ingresar Orden de Trabajo</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 	<!--===============================================================================================-->
-
++
 
 
 </head>
@@ -121,7 +121,7 @@
 			</div>
 			<br> <br>
 			<center>
-				<input type="submit" name="go" id="go" value="Registrar" >
+				<input type="submit" name="go" id="go" value="Ingresar Orden de Trabajo" >
 				<br> <br>
 
 			</center>

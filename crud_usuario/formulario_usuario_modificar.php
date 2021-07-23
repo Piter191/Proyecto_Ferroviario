@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Formulario Usuario</title>
+	<title>Modificar Usuario</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
-<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
+<link rel="icon" href="../img/favicon_geotren.ico" type="image/x-icon" />
 <?php
 include("../funciones/setup.php");
 	$id_usuario=$_GET['id_usuario'];
@@ -37,6 +37,34 @@ include("../funciones/setup.php");
 	while($user=mysqli_fetch_array($result))
 	{
 ?>
+<script>
+  function soloLetras(e) {
+      key = e.keyCode || e.which;
+      tecla = String.fromCharCode(key).toLowerCase();
+      letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+      especiales = [8, 37, 39, 46];
+  
+      tecla_especial = false
+      for(var i in especiales) {
+          if(key == especiales[i]) {
+              tecla_especial = true;
+              break;
+          }
+      }
+  
+      if(letras.indexOf(tecla) == -1 && !tecla_especial)
+          return false;
+  }
+  
+  function limpia() {
+      var val = document.getElementById("miInput").value;
+      var tam = val.length;
+      for(i = 0; i < tam; i++) {
+          if(!isNaN(val[i]))
+              document.getElementById("miInput").value = '';
+      }
+  }
+  </script>
 
 
 
@@ -51,14 +79,14 @@ include("../funciones/setup.php");
 		<input type="text" style="display: none;" name="id_usuario" value="<?php echo $_GET['id_usuario'] ?>">
 		<p>
 		<center>  <label for="email">Nombre</label> </center>
-          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" value="<?php echo $user['nombre'] ?>" required>
+          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" value="<?php echo $user['nombre'] ?>"  onkeypress="return soloLetras(event)" required>
 		</p>
 		<p>
-		<center>  <label for="password">Rut</label> </center>
+		<center>  <label for="password">RUT</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" value="<?php echo $user['rut'] ?>" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
         <p>
-		  <label for="password">Tipo de Usuario</label>
+	<center> <label for="password">Tipo de Usuario</label> </center>
           <div class="select">
           <select  name="tipo_usuario" id="tipo_usuario">
 			<?php if($user['tipo_usuario'] == 'Administrador'){?>
@@ -86,7 +114,7 @@ include("../funciones/setup.php");
 		</p>
         <p>
 		<center>  <label for="password">Contraseña</label> </center>
-          <input type="password" placeholder="Ingresa tu Contraseña" name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
+          <input type="password" placeholder="Ingresa tu Contraseña (6 - 8 Caracteres)"name="clave" id="clave" value="<?php echo $user['clave'] ?>" required>
 		</p>
 		<p>
 		<center>  <label for="password">Estado</label> </center>
@@ -104,10 +132,11 @@ include("../funciones/setup.php");
 		<?php } ?>
 		
 		</select>
+		<br> <br>
 		</div>
 		</p>
 		<center>
-		<input type="submit" name="go" id="go" value="Registrar">
+		<input type="submit" name="go" id="go" value="Modificar Usuario">
 		<br> <br>
 		
 		</center>

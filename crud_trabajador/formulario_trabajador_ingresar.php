@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Formulario Trabajador</title>
+	<title>Ingresar Trabajador</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
-<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
+<link rel="icon" href="../img/favicon_geotren.ico" type="image/x-icon" />
 <script type="text/javascript">
 		function valideKey(evt){
 			
@@ -42,6 +42,34 @@
 			}
 		}
 		</script>
+<script>
+  function soloLetras(e) {
+      key = e.keyCode || e.which;
+      tecla = String.fromCharCode(key).toLowerCase();
+      letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+      especiales = [8, 37, 39, 46];
+  
+      tecla_especial = false
+      for(var i in especiales) {
+          if(key == especiales[i]) {
+              tecla_especial = true;
+              break;
+          }
+      }
+  
+      if(letras.indexOf(tecla) == -1 && !tecla_especial)
+          return false;
+  }
+  
+  function limpia() {
+      var val = document.getElementById("miInput").value;
+      var tam = val.length;
+      for(i = 0; i < tam; i++) {
+          if(!isNaN(val[i]))
+              document.getElementById("miInput").value = '';
+      }
+  }
+  </script>
 
 
 </head>
@@ -54,10 +82,10 @@
 		<div class="inset">
 		<p>
 		 <center> <label for="nombre">Nombre</label> </center>
-          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" required>
+          <input  type="text" placeholder="Ingresa tu nombre" name="nombre" id="nombre" onkeypress="return soloLetras(event)" required>
 		</p>
 		<p>
-		<center>  <label for="rut">Rut</label> </center>
+		<center>  <label for="rut">RUT</label> </center>
 		  <input  type="text" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" name="rut" id="rut" oninput="checkRut(this)" maxlength="11" minlength="10" required>
 		</p>
         
@@ -77,7 +105,7 @@
 		</p> <br>
 		
 		<center>
-		<input type="submit" name="go" id="go" value="Registrar">
+		<input type="submit" name="go" id="go" value="Ingresar Trabajador">
 		<br> <br>
 		
 		</center>

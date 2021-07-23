@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Iniciar Sesion</title>
+	<title>Iniciar Sesión - Administrador</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/iniciar_sesion/main.css">
 <!--===============================================================================================-->
-
+<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
 
 <script>
 	function validar()
@@ -56,7 +56,7 @@
 		<div class="inset">
 		<p>
 		<center>  <label for="email">RUT</label>   </center>
-		  <input type="text"  id="frmrut" name="frmrut" placeholder="Ingrese su rut" class="text">
+		  <input type="text"  id="frmrut" name="frmrut" placeholder="Ingresa tu rut (Formato XXXXXXXX-X)" class="text">
 		</p>
 		<p>
 		<center>  <label for="password">CLAVE</label> </center>
