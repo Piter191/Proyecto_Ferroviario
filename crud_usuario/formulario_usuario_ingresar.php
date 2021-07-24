@@ -3,6 +3,8 @@
 <head>
 	<title>Ingresar Usuario</title>
 	<meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/train.ico"/>
@@ -98,7 +100,8 @@
                                 </div>
 		</p> <br>
 		<center>
-		<input type="submit" name="go" id="go" value="Ingresar Usuario">
+        <input type="submit" name="go" id="go" value="Ingresar Usuario"> <br><br>
+        <a href="../Dashboard_Admin.php"><button   type="button" class="btn-white" style="height:30px;width:150px">  Volver </button> </a> 
 		<br> <br>	
 		</center>
 

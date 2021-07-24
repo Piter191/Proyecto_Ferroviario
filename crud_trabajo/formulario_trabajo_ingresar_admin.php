@@ -122,7 +122,8 @@
 			</div>
 			<br> <br>
 			<center>
-				<input type="submit" name="go" id="go" value="Ingresar Orden de Trabajo" >
+				<input type="submit" name="go" id="go" value="Ingresar Orden de Trabajo" > <br> <br>
+				<a href="../Dashboard_Admin.php"><button   type="button" class="btn-white" style="height:30px;width:150px">  Volver </button> </a> 
 				<br> <br>
 
 			</center>

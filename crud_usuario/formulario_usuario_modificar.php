@@ -136,7 +136,8 @@ include("../funciones/setup.php");
 		</div>
 		</p>
 		<center>
-		<input type="submit" name="go" id="go" value="Modificar Usuario">
+		<input type="submit" name="go" id="go" value="Modificar Usuario"> <br> <br>
+		<a href="../Dashboard_Admin.php"><button   type="button" class="btn-white" style="height:30px;width:150px">  Volver </button> </a> 
 		<br> <br>
 		
 		</center>
