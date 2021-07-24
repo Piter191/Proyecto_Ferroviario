@@ -22,23 +22,23 @@
 </head>
 
 <body>
-<center>
-	<h1>Trabajos de Puente de Vaciado </h1> <br> <br>
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th class="th-sm table-danger">Fecha de inicio</th>
-				<th class="th-sm table-danger">Hora Inicio</th>
-				<th class="th-sm table-danger">Fecha Termino</th>
-				<th class="th-sm table-danger">Hora de Termino</th>
-				<th class="th-sm table-danger">Nombre Lugar</th>
-				<th class="th-sm table-danger">Nombre Sector</th>
-				<th class="th-sm table-danger">Trabajador</th>
-				<th class="th-sm table-danger">Estado</th>
-			</tr>
-		</thead>
-		<?php
-		$sql = "SELECT
+	<center>
+		<h1>Trabajos de Puente de Vaciado </h1> <br> <br>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th class="th-sm table-danger">Fecha de inicio</th>
+					<th class="th-sm table-danger">Hora Inicio</th>
+					<th class="th-sm table-danger">Fecha Termino</th>
+					<th class="th-sm table-danger">Hora de Termino</th>
+					<th class="th-sm table-danger">Nombre Lugar</th>
+					<th class="th-sm table-danger">Nombre Sector</th>
+					<th class="th-sm table-danger">Trabajador</th>
+					<th class="th-sm table-danger">Estado</th>
+				</tr>
+			</thead>
+			<?php
+			$sql = "SELECT
 	    tabla_lugares.nombre AS nombre_lugar, trabajo_transporte.*, trabajador.nombre AS nombre_trabajador, tabla_lugares.id_sector AS nombre_sector
         FROM trabajo_transporte
         INNER JOIN
@@ -46,22 +46,24 @@
 	    INNER JOIN
 	    trabajador ON trabajador.id_trabajador = trabajo_transporte.id_trabajador
 	    WHERE trabajo_transporte.estado = 'En Progreso' and tabla_lugares.id_sector = 'Puente de Vaciado'";
-		$result = mysqli_query(conectar(), $sql);
-		while ($mostrar = mysqli_fetch_array($result)) {
-		?>
-			<tr>
-				<td><?php echo $mostrar['fecha_inicio'] ?>
-				<td><?php echo $mostrar['hora_inicio'] ?>
-				<td><?php echo $mostrar['fecha_termino'] ?>
-				<td><?php echo $mostrar['hora_termino'] ?></td>
-				<td><?php echo $mostrar['nombre_lugar'] ?></td>
-				<td><?php echo $mostrar['nombre_sector'] ?></td>
-				<td><?php echo $mostrar['nombre_trabajador'] ?></td>
-				<td><?php echo $mostrar['estado'] ?></td>
-			</tr>
-		<?php
-		}
-		?>
-	</table>
+			$result = mysqli_query(conectar(), $sql);
+			while ($mostrar = mysqli_fetch_array($result)) {
+			?>
+				<tr>
+					<td><?php echo $mostrar['fecha_inicio'] ?>
+					<td><?php echo $mostrar['hora_inicio'] ?>
+					<td><?php echo $mostrar['fecha_termino'] ?>
+					<td><?php echo $mostrar['hora_termino'] ?></td>
+					<td><?php echo $mostrar['nombre_lugar'] ?></td>
+					<td><?php echo $mostrar['nombre_sector'] ?></td>
+					<td><?php echo $mostrar['nombre_trabajador'] ?></td>
+					<td><?php echo $mostrar['estado'] ?></td>
+				</tr>
+			<?php
+			}
+			?>
+		</table>
+		<input type="button" value="Volver" onClick="history.go(-1);">
 </body>
+
 </html>
