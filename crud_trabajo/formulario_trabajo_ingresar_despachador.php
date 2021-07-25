@@ -29,13 +29,13 @@
 	<link rel="stylesheet" type="text/css" href="../css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/iniciar_sesion/main.css">
 	<!--===============================================================================================-->
-+
++	<script type="text/javascript" src="validar_fechas.js"></script>
 
 
 </head>
 
 <body>
-	<form method="POST" action="../controladores/ctrl_trabajo_ingresar_despachador.php">
+	<form method="POST" action="../controladores/ctrl_trabajo_ingresar_despachador.php" onsubmit="funcionSubmit(event)">
 		<h1>Ingresar Orden de Trabajo</h1>
 		<center>
 			<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
@@ -121,7 +121,7 @@
 			</div>
 			<br> <br>
 			<center>
-				<input type="submit" name="go" id="go" value="Ingresar Orden de Trabajo" > <br> <br>
+				<input type="submit" name="go" id="go" value="Ingresar Orden de Trabajo" onclick="ValidarFiltroDeFechas('fecha_inicio','fecha_termino')" > <br> <br>
 				<a href="../Dashboard_Despachador.php"><button   type="button" class="btn-white" style="height:30px;width:150px">  Volver </button> </a> 
 				<br> <br>
 

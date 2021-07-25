@@ -40,13 +40,14 @@ include("../funciones/setup.php");
 	{
 ?>
 
+<script type="text/javascript" src="validar_fechas.js"></script>
 
 
 
 </head>
 
 <body>
-	<form method="POST" action="../controladores/ctrl_trabajo_modificar_admin.php">
+	<form method="POST" action="../controladores/ctrl_trabajo_modificar_admin.php" onsubmit="funcionSubmit(event)">
 		<h1>Modificar Orden de Trabajo</h1>
 		<center>
 			<img src="../img/Logo_GEOTREN.png" width="120px" height="100px">
@@ -148,7 +149,7 @@ include("../funciones/setup.php");
 			</div>
 			<br> <br>
 			<center>
-				<input type="submit" name="go" id="go" value="Modificar Orden de Trabajo"> <br> <br>
+				<input type="submit" name="go" id="go" value="Modificar Orden de Trabajo" onclick="ValidarFiltroDeFechas('fecha_inicio','fecha_termino')"> <br> <br>
 				<a href="../Dashboard_Admin.php"><button   type="button" class="btn-white" style="height:30px;width:150px">  Volver </button> </a> 
 				<br> <br>
 
