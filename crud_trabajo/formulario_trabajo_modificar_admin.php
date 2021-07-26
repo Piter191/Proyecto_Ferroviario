@@ -31,8 +31,8 @@
 	<!--===============================================================================================-->
 	<?php
 include("../funciones/setup.php");
-	$id_trabajo_transporte=$_GET['id_trabajo_transporte'];
-	$sql="SELECT * FROM trabajo_transporte where id_trabajo_transporte='".$id_trabajo_transporte."'";
+	$id_trabajo_mantencion=$_GET['id_trabajo_mantencion'];
+	$sql="SELECT * FROM trabajo_mantencion where id_trabajo_mantencion='".$id_trabajo_mantencion."'";
 	
 	$result=mysqli_query(conectar(),$sql);// EJECUTAMOS LA QUERY
 
@@ -54,7 +54,7 @@ include("../funciones/setup.php");
 		</center>
 		<div class="inset">
         <p>
-		<input type="text" style="display: none;" name="id_trabajo_transporte" value="<?php echo $_GET['id_trabajo_transporte'] ?>">
+		<input type="text" style="display: none;" name="id_trabajo_mantencion" value="<?php echo $_GET['id_trabajo_mantencion'] ?>">
 		</p>
 			<p>
 				<center> <label for="fecha_inicio">Fecha de Inicio</label>

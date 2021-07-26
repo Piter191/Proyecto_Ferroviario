@@ -1,5 +1,5 @@
 $('#trabajoId').on('click', () => {
-    $.get('./get_all_work_transfer.php',  // url
+    $.get('./get_all_works.php',  // url
     function (data, textStatus, jqXHR) {  // success callback
         const users = data;
         let table = `
@@ -32,11 +32,11 @@ $('#trabajoId').on('click', () => {
             <td> ${user.nombre_sector} </td>
             <td> ${user.estado} </td>
             <td>
-            <a class="btn btn-dark"   href="./crud_trabajo/formulario_trabajo_modificar_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+            <a class="btn btn-dark"   href="./crud_trabajo/formulario_trabajo_modificar_despachador.php?id_trabajo_mantencion=${user.id_trabajo_mantencion}"  role="button">
                 <i class="icon ion-md-hammer"></i>
                 </a>
 
-                <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_transporte=${user.id_trabajo_transporte}"  role="button">
+                <a class="btn btn-danger"  href="./crud_trabajo/eliminar_trabajo_despachador.php?id_trabajo_mantencion=${user.id_trabajo_mantencion}"  role="button">
                 <i class="icon ion-md-remove-circle"></i>
                  </a> 
                 </td>
