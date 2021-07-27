@@ -1,6 +1,6 @@
 <?php
 
-$cont=mysqli_connect('localhost','root','Geotren','Geotren');
+$cont=mysqli_connect('localhost','root','Geotren','geotren');
 
 $sql="select * from usuario where rut='".$_GET['usu']."' and clave='".$_GET['pass']."' and estado = 'Activo' and tipo_usuario = 'Administrador'";
 
