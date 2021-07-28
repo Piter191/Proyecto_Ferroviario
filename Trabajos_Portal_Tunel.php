@@ -24,7 +24,7 @@
 <body>
 	<center>
 	<div class="container">
-		<h1 id="Titulo_Tablas_Mapa">>Trabajos de Portal Tunel </h1> <br> <br>
+		<h1 id="Titulo_Tablas_Mapa">Trabajos de Portal Tunel </h1> <br> <br>
 		<table class="table table-condensed table-bordered table-hover" id="customers">
 			<thead>
 				<tr>
