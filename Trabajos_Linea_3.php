@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<link rel="stylesheet" href="css/tablas_mapa.css" />
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="icon" href="img/favicon_geotren.ico" type="image/x-icon" />
@@ -23,8 +23,9 @@
 
 <body>
 	<center>
-		<h1>Trabajos de Linea 3 </h1> <br> <br>
-		<table class="table table-striped">
+	<div class="container">
+		<h1 id="Titulo_Tablas_Mapa">>Trabajos de Linea 3 </h1> <br> <br>
+		<table class="table table-condensed table-bordered table-hover" id="customers">
 			<thead>
 				<tr>
 					<th class="th-sm table-danger">Fecha de inicio</th>
@@ -63,7 +64,8 @@
 			}
 			?>
 		</table>
-		<input type="button" value="Volver" onClick="history.go(-1);">
+		<input id="Boton_Volver" type="button" value="Volver" onClick="history.go(-1);">
+		</div>
 </body>
 
 </html>
