@@ -1,12 +1,23 @@
+<?php
+session_start();
+
+if(isset($_SESSION['user']))
+{
+    include('funciones/setup.php');
+
+
+    if(isset($_GET['idusu']))
+    {
+        $sqlusu="select * from usuario where id_usuario=".$_GET['idusu'];
+        $resultusu=mysqli_query(conectar(),$sqlusu);
+        $datosusu=mysqli_fetch_array($resultusu);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<?php
 
-	include('funciones/setup.php');
-
-	?>
 	<title>Trabajos en sector Linea 3</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,5 +78,9 @@
 		<input id="Boton_Volver" type="button" value="Volver" onClick="history.go(-1);">
 		</div>
 </body>
-
 </html>
+<?php
+}else{
+    header('Location:acceso_denegado.php');
+}
+?>

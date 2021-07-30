@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if(isset($_SESSION['user']))
+{
+    include('../funciones/setup.php');
+
+
+    if(isset($_GET['idusu']))
+    {
+        $sqlusu="select * from usuario where id_usuario=".$_GET['idusu'];
+        $resultusu=mysqli_query(conectar(),$sqlusu);
+        $datosusu=mysqli_fetch_array($resultusu);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,3 +176,9 @@
 		});
 	}
 </script>
+
+<?php
+}else{
+    header('Location:../acceso_denegado.php');
+}
+?>
